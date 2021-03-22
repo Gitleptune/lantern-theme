@@ -1,6 +1,6 @@
 # lantern-theme
 Orange-Brown colour theme:
-https://coolors.co/261b17-1b110e-251510-532f28-cc5316-e35b15-f99666
+https://coolors.co/261b17-1b110e-251510-532f28-cc5316-e35b15-e04220-f99666
 
 Browns: 
 #261B17
@@ -12,3 +12,6 @@ Oranges:
 #cc5316
 #e35b15
 #f99666
+
+Red-Orange:
+#e04220
