@@ -1,4 +1,5 @@
 You can use this theme with either the Stylus extension for web(https://github.com/openstyles/stylus), or BetterDiscord/BeautifulDiscord for client. 
+
 Recommended to use with Fira Code(https://github.com/tonsky/FiraCode)
 ```
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
