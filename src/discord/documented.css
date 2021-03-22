@@ -1,0 +1,89 @@
+@import url("https://mrtipson.github.io/DiscordCSS/server-folders.css");
+/*block blocked messages*/
+div[class*="groupStart-"] > [role="group"] {
+    display: none;
+}
+
+/* hiding channels list */
+.sidebar-2K8pFh:hover {
+  right: 0px;
+  margin-right: 0px;
+}
+.sidebar-2K8pFh {
+  position: relative;
+  margin-right: -244px;
+  right: 243px;
+  transition: ease-in-out 0.5s;
+}
+.sidebar-2K8pFh:not(:hover) {
+    padding-right: 10px;
+    position: sticky;
+}
+.header-2V-4Sw {
+    box-shadow: var(--elevation-low) !important;
+}
+.animatedContainer-1NSq4T {
+    display: none !important;
+}
+::selection {
+  color: #fff;
+  background: #f99666;
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --background-primary:  #261b17 !important; /* main body colour */
+    --background-secondary: #1b110e !important; /* channel list, embeds, side bar, message box, icons for sharing screen and etc*/
+    --background-secondary-alt: #251510 !important; /*on hover colour for people and channels, and your avatar thingy at the bottoms */
+    --background-tertiary: #1b110e !important; /*side bar around servers*/
+    --background-accent: var(--background-secondary) !important;
+    --background-extra: #f99666; /* stuff like names, time of posting, and placeholders for different text boxes*/
+    --background-extra-alt: #ff00ed;
+    --background-floating: var(--background-tertiary) !important;
+    --background-modifier-hover: var(--background-secondary-alt) !important;
+    --background-modifier-active: #cc5316 !important; /* changes the colour of the channel when clicked */
+    --background-modifier-selected: var(--background-secondary-alt) !important;
+    --background-modifier-accent: #261b17 !important; /* emote background colour */
+    --channeltextarea-background: var(--background-secondary) !important;
+    --focus-primary: #ff00ed !important;
+    --deprecated-card-bg: #ff00ed !important; 
+    --deprecated-card-editable-bg: rgba(0, 0, 0, 0.1) !important;
+    --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
+    --activity-card-background: var(--background-primary) !important;
+    --channels-default: var(--background-extra) !important;
+    --text-muted: var(--background-extra) !important;
+    --text-normal: #fff !important;
+    --text-link: #e35b15; /* link */
+    --interactive-normal: #e35b15 !important; /* upload file thingy, pins, gif, gift, shit like that, reply and other buttons too */
+    --interactive-hover: var(--background-extra) !important;
+    --interactive-active: var(--text-normal) !important;
+    --interactive-muted: #261b17 !important; /* muted channels/categories*/ 
+    --header-secondary: #e8e5e5 !important;
+    --toast-background: var(--background-primary) !important;
+    --toast-header: var(--background-tertiary) !important;
+    --toast-contents: var(--background-secondary) !important;
+    --toast-box-shadow: #ff00ed !important;
+    --toast-border: var(--background-tertiary) !important;
+    --background-mentioned-hover: #d77f2936 !important; /* ping on hover*/
+    --background-mentioned: #ae68232b; /* just pong */
+    --header-primary: var(--background-extra) !important;
+    --border-radius: 18px;
+    --deprecated-text-input-prefix: #ff00ed; 
+    --scrollbar-thin-thumb: #1b110e; /* channel and people sidebar baby scroll colour */ 
+    --scrollbar-thin-track: transparent; 
+    --scrollbar-auto-thumb: #261b17; /* message box baby scroll thingy */ 
+    --scrollbar-auto-track: #261b17; /* non scrolly part of the scrol */
+    --scrollbar-auto-scrollbar-color-thumb: #ff00ed; 
+    --scrollbar-auto-scrollbar-color-track: #ff00ed; 
+    --elevation-low: transparent; /* imgur.com/a/PQuzp18 /line under channel description*/
+    --elevation-high: 0 4px 10px #ffaa80; /* glow around tooltips */
+    --logo-primary: #ff00ed;
+    --guild-header-text-shadow: 0 1px 1px #ff00ed;
+    --deprecated-panel-background: #ff00ed; /* no clue */
+    --deprecated-quickswitcher-input-background: #532f28; /* CTRL+K/ channel search menu background colour */
+    --deprecated-quickswitcher-input-placeholder: #fff; /* CTRL+K / channel search menu text colour */
+    --deprecated-text-input-bg: #532f28; /*colour on message box background person on profile card pop up*/
+    --deprecated-text-input-border: #f99666 ; /* message box on profile cards border when not focused or hovering*/
+    --deprecated-text-input-border-hover: #f99666; /* message box on profile cards on hover border colour */ 
+}
