@@ -1,9 +1,29 @@
 @import url("https://mrtipson.github.io/DiscordCSS/server-folders.css");
-/*block blocked messages*/
+/*hide blocked messages*/
 div[class*="groupStart-"] > [role="group"] {
     display: none;
 }
-
+/* hiding edited messages */
+.edited-3sfAzf {
+    display: none;
+}
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+/* Disable background darken when hovering a message */
+.message-2qnXI6:not(.mentioned-xhSam7):hover {
+    background-color: var(--background-primary) !important;
+}
+/* change channel list variable */
+[class*='sidebar-'] {
+    --interactive-muted: #532f28;
+    --background-secondary: #1b110e;
+}
+/* hiding nitro part in friends tab */
+#private-channels [href="/store"] {
+    display: none;
+}
 /* hiding channels list */
 .sidebar-2K8pFh:hover {
   right: 0px;
@@ -30,6 +50,119 @@ div[class*="groupStart-"] > [role="group"] {
   background: #f99666;
 }
 
+/* Friend list, block list, etc */
+.peopleColumn-29fq28 { background-color: var(--background-accent); }
+
+/* Make the embed border "wrap around" the embed a bit more */
+.embed-IeVjo6 { border-radius: 6.9px; }
+
+/* Colour of boxes of any popup e.g. delete/pin message*/
+  .theme-dark .message-2qRu38 { background-color: #261b17 !important; } /* part where message is embedded */
+  .theme-dark .root-1gCeng { background-color: var(--background-primary) !important; } /* embedded part */
+  .theme-dark .footer-2gL1pp { background-color: var(--background-secondary) !important; } /* footer */
+
+/* Blurred notes on a user (when clicked in member list and on profile) */
+  .note-QfFU8y textarea { filter: blur(5px); transition: .2s cubic-bezier(.2, .11, 0, 1); }
+  .note-QfFU8y textarea:focus, .note-QfFU8y textarea:hover { filter: none; transition: .2s cubic-bezier(.2, .11, 0, 1); }
+
+  .note-3HfJZ5 textarea { filter: blur(5px); transition: .2s cubic-bezier(.2, .11, 0, 1); }
+  .note-3HfJZ5 textarea:focus, .note-3HfJZ5 textarea:hover { filter: none; transition: .2s cubic-bezier(.2, .11, 0, 1); }
+
+/* Mention suggestions when typing @something or emotes */
+  .autocompleteInner-zh20B_ { background-color: var(--background-tertiary) !important; }
+  .selectorSelected-1_M1WV { background-color: var(--background-floating) !important; }
+
+/* Upload popup */
+  .uploadModal-2ifh8j { background-color: var(--background-primary) !important; } /* colour of upper portion */
+  .footer-3mqk7D { background-color: var(--background-secondary-alt) !important; } /* colour of lower portion */ 
+
+/* Message search menu and quickswitcher; code yoinked from the amazing LuckFire! */
+  .searchFilter-2ESiM3, .searchAnswer-3Dz2-q { background-color: var(--background-secondary-alt) !important; }
+
+  #search-results > .focused-2bY0OD { background-color: var(--background-secondary) !important; }
+  #search-results {
+    background-color: var(--background-secondary) !important;
+    box-shadow: 0 0 0 1px var(--background-tertiary), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .option-96V44q.selected-rZcOL- { background-color: var(--background-modifier-hover) !important; }
+  .option-96V44q::after { background: transparent !important; }
+  .option-96V44q.selected-rZcOL-::before { background: var(--background-secondary-alt) !important; padding-left: 10px; }
+
+  .react-datepicker, .react-datepicker__header { background-color: var(--background-secondary) !important; }
+
+  .react-datepicker__day:not(:hover):not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month) {
+    background-color: var(--background-secondary-alt) !important;
+  }
+  .react-datepicker__day { border-color: var(--background-tertiary) !important; }
+  .react-datepicker__day--disabled,
+  .react-datepicker__day--outside-month { background-color: var(--background-primary) !important; }
+
+/* Sticker blocking "borrowed" from !gh spinfish */
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style] { height: auto !important; width: auto !important; }
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active { height: 160px !important; width: 160px !important; }
+
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:after { content: '1 blocked sticker - Show Sticker'; color: var(--text-link); }
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active:after { content: none; }
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:hover:after { text-decoration: underline; }
+
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style] .lottieCanvas-1W7L-f,
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style] .pngImage-33yLRP { display: none; }
+
+  .ahwrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .lottieCanvas-1W7L-f,
+  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .pngImage-33yLRP { display:block; }
+
+
+/* Reaction boxes */
+  .reactors-Blmlhw.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 { background-color: var(--background-primary) !important; } /* main box */
+  .scroller-1-nKid.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 { background-color: var(--background-primary) !important; } /* colour of scroller */
+
+/* Better Playing Modals, again from Luckfire */
+  .headerPlaying-j0WQBV, .topSectionPlaying-1J5E4n { background-color: var(--background-accent); } /* normal */
+  .headerSpotify-zpWxgT, .topSectionSpotify-1lI0-P { background-color: var(--background-accent); } /* spotify FUTURE ME ADD NICE COLOUR FOR THIS*/
+  .headerStreaming-2FjmGz, .topSectionStreaming-1Tpf5X { background-color: var(--background-accent); } /* streaming */
+
+/* Profile when clicked in member list */
+  /* footer colour */
+  .flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0 {
+    background-color: var(--background-tertiary) !important;
+  }
+
+  .body-3iLsc4 { background-color: var(--background-secondary-alt) !important; } /* role box background colour */
+  .footer-1fjuF6 { background-color: var(--background-secondary-alt) !important; } /* footer ie where message user is embedded */
+
+  .quickMessage-2XpSaN.quickMessage-1yeL4E { background-color: var(--background-tertiary) !important; } /* Message user box */
+  .activityUserPopout-2yItg2.activity-11LB_k { background-color: var(--background-tertiary) !important; } /* Playing box */
+
+/* Inline status selection */
+  .status-1fhblQ, .description-2L932D { display: none; }
+  .separator-2I32lJ { display: none; }
+
+  .mask-1qbNWk.icon-1IxfJ2 {
+    --status-icon-size: 75%;
+    height: var(--status-icon-size); 
+    width: var(--status-icon-size);
+    margin-left: 33%;
+  }
+
+  .animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8 >
+  .menu-3sdvDG.styleFixed-sX-yHV > .scroller-3BxosC.thin-1ybCId.scrollerBase-289Jih {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+    visibility: visible;
+  }
+
+  .item-1tOPte.colorDefault-2K3EoJ:nth-of-type(7) { grid-column: 1/5; }
+  .animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8 { transition: opacity 0.15s linear 0s; }
+  .customText-tY5LJn { font-size: 15px; }
+
+/* Make pinned messages wider */
+.messagesPopoutWrap-1MQ1bW { width: 500px; }
+
+/* Sets background colour for when you click on Server Boost */
+.perksModalContentWrapper-2HU6uL { background: var(--background-accent) !important; }
+
 .theme-dark,
 .theme-light,
 :root {
@@ -44,11 +177,11 @@ div[class*="groupStart-"] > [role="group"] {
     --background-modifier-hover: var(--background-secondary-alt) !important;
     --background-modifier-active: #cc5316 !important; /* changes the colour of the channel when clicked */
     --background-modifier-selected: var(--background-secondary-alt) !important;
-    --background-modifier-accent: #261b17 !important; /* emote background colour */
+    --background-modifier-accent: #261b17 !important; /* emote background colour, new day startng point thingy lines(https://imgur.com/mAb5EQG) */
     --channeltextarea-background: var(--background-secondary) !important;
-    --focus-primary: #ff00ed !important;
-    --deprecated-card-bg: #ff00ed !important; 
-    --deprecated-card-editable-bg: rgba(0, 0, 0, 0.1) !important;
+    --focus-primary: #e35b15 !important; /* tabbing colour */
+    --deprecated-card-bg: #1b110e !important; /* parts of things in settings might affect other things too */
+    --deprecated-card-editable-bg: #ff00ed !important;
     --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
     --activity-card-background: var(--background-primary) !important;
     --channels-default: var(--background-extra) !important;
@@ -58,15 +191,15 @@ div[class*="groupStart-"] > [role="group"] {
     --interactive-normal: #e35b15 !important; /* upload file thingy, pins, gif, gift, shit like that, reply and other buttons too */
     --interactive-hover: var(--background-extra) !important;
     --interactive-active: var(--text-normal) !important;
-    --interactive-muted: #261b17 !important; /* muted channels/categories*/ 
+    --interactive-muted: #e35b15 !important; /* muted channels/categories/quotes*/ 
     --header-secondary: #e8e5e5 !important;
     --toast-background: var(--background-primary) !important;
     --toast-header: var(--background-tertiary) !important;
     --toast-contents: var(--background-secondary) !important;
     --toast-box-shadow: #ff00ed !important;
     --toast-border: var(--background-tertiary) !important;
-    --background-mentioned-hover: #d77f2936 !important; /* ping on hover*/
-    --background-mentioned: #ae68232b; /* just pong */
+    --background-mentioned-hover: #cc531645 !important; /* ping on hover*/
+    --background-mentioned: #cc531630; /* just pong */
     --header-primary: var(--background-extra) !important;
     --border-radius: 18px;
     --deprecated-text-input-prefix: #ff00ed; 
@@ -80,7 +213,7 @@ div[class*="groupStart-"] > [role="group"] {
     --elevation-high: 0 4px 10px #ffaa80; /* glow around tooltips */
     --logo-primary: #ff00ed;
     --guild-header-text-shadow: 0 1px 1px #ff00ed;
-    --deprecated-panel-background: #ff00ed; /* no clue */
+    --deprecated-panel-background: #ff00ed;
     --deprecated-quickswitcher-input-background: #532f28; /* CTRL+K/ channel search menu background colour */
     --deprecated-quickswitcher-input-placeholder: #fff; /* CTRL+K / channel search menu text colour */
     --deprecated-text-input-bg: #532f28; /*colour on message box background person on profile card pop up*/
