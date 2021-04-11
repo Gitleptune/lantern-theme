@@ -1,6 +1,7 @@
 # Lantern Theme for Discord 
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](discord-lantern-theme.user.css)
 
-You can use this theme with either the Stylus extension for web(https://github.com/openstyles/stylus), or BetterDiscord/BeautifulDiscord for client. Available to install on https://userstyles.world/style/9.
+You can use this theme with either the Stylus extension for web(https://github.com/openstyles/stylus) by clicking the button above, or BetterDiscord/BeautifulDiscord for client. Also available on https://userstyles.world/style/9.
 
 Recommended to use with Fira Code(https://github.com/tonsky/FiraCode) (If you install the font you can just remove the google fonts part)
 ```css
