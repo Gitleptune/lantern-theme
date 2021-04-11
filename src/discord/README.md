@@ -1,5 +1,5 @@
 # Lantern Theme for Discord 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](discord-lantern-theme.USER.CSS)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](discord-lantern-theme.user.css)
 
 You can use this theme with either the Stylus extension for web(https://github.com/openstyles/stylus) by clicking the button above, or BetterDiscord/BeautifulDiscord for client. Also available on https://userstyles.world/style/9.
 
