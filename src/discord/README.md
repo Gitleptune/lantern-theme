@@ -23,7 +23,7 @@ You can use this theme with BetterDiscord/BeautifulDiscord or any other client t
 Recommended to use with Fira Code (https://github.com/tonsky/FiraCode) (If you install the font you can just remove the google fonts part)
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-:not(i[class*="fa"]):not(.stfs-icon):not(.stf-icon) {
+* {
     font-family: 'Fira Code', monospace !important;
     letter-spacing: -0.30px !important;
 }
