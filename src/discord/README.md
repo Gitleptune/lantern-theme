@@ -4,7 +4,7 @@ Test out the theme here: https://gibbu.github.io/ThemePreview/?file=https://raw.
 ## Installation
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Gitleptune/lantern-theme/main/src/discord/discord-lantern-theme.user.css)
 ### For web discord
-You can use this theme with either Stylus(https://github.com/openstyles/stylus) and simply clicking the button above. Style is also available on https://userstyles.world/style/9.
+You can use this theme with Stylus (https://github.com/openstyles/stylus) and simply clicking the button above. Style is also available on https://userstyles.world/style/9.
 ### For client
 You can use this theme with BetterDiscord/BeautifulDiscord or any other client that allows css injection.
 
@@ -20,7 +20,7 @@ You can use this theme with BetterDiscord/BeautifulDiscord or any other client t
 * Better playing modals (spotify, normal and streaming) (Credit to https://github.com/LuckFire)
 * Better user pop out and status selection (Credit to https://github.com/spinfish/spinfish)
 ### Misc
-Recommended to use with Fira Code(https://github.com/tonsky/FiraCode) (If you install the font you can just remove the google fonts part)
+Recommended to use with Fira Code (https://github.com/tonsky/FiraCode) (If you install the font you can just remove the google fonts part)
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 :not(i[class*="fa"]):not(.stfs-icon):not(.stf-icon) {
