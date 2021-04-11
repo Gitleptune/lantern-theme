@@ -1,222 +1,370 @@
-@import url("https://mrtipson.github.io/DiscordCSS/server-folders.css");
-/*hide blocked messages*/
-div[class*="groupStart-"] > [role="group"] {
-    display: none;
-}
-/* hiding edited messages */
-.edited-3sfAzf {
-    display: none;
-}
-/* Hide Nitro gift button */
-button[aria-label="Send a gift"] {
-    display: none;
-}
-/* Disable background darken when hovering a message */
-.message-2qnXI6:not(.mentioned-xhSam7):hover {
-    background-color: var(--background-primary) !important;
-}
-/* change channel list variable */
-[class*='sidebar-'] {
-    --interactive-muted: #532f28;
-    --background-secondary: #1b110e;
-}
-/* hiding nitro part in friends tab */
-#private-channels [href="/store"] {
-    display: none;
-}
-/* hiding channels list */
-.sidebar-2K8pFh:hover {
-  right: 0px;
-  margin-right: 0px;
-}
-.sidebar-2K8pFh {
-  position: relative;
-  margin-right: -244px;
-  right: 243px;
-  transition: ease-in-out 0.5s;
-}
-.sidebar-2K8pFh:not(:hover) {
-    padding-right: 10px;
-    position: sticky;
-}
-.header-2V-4Sw {
-    box-shadow: var(--elevation-low) !important;
-}
-.animatedContainer-1NSq4T {
-    display: none !important;
-}
-::selection {
-  color: #fff;
-  background: #f99666;
-}
-
-/* Friend list, block list, etc */
-.peopleColumn-29fq28 { background-color: var(--background-accent); }
-
-/* Make the embed border "wrap around" the embed a bit more */
-.embed-IeVjo6 { border-radius: 6.9px; }
-
-/* Colour of boxes of any popup e.g. delete/pin message*/
-  .theme-dark .message-2qRu38 { background-color: #261b17 !important; } /* part where message is embedded */
-  .theme-dark .root-1gCeng { background-color: var(--background-primary) !important; } /* embedded part */
-  .theme-dark .footer-2gL1pp { background-color: var(--background-secondary) !important; } /* footer */
-
-/* Blurred notes on a user (when clicked in member list and on profile) */
-  .note-QfFU8y textarea { filter: blur(5px); transition: .2s cubic-bezier(.2, .11, 0, 1); }
-  .note-QfFU8y textarea:focus, .note-QfFU8y textarea:hover { filter: none; transition: .2s cubic-bezier(.2, .11, 0, 1); }
-
-  .note-3HfJZ5 textarea { filter: blur(5px); transition: .2s cubic-bezier(.2, .11, 0, 1); }
-  .note-3HfJZ5 textarea:focus, .note-3HfJZ5 textarea:hover { filter: none; transition: .2s cubic-bezier(.2, .11, 0, 1); }
-
-/* Mention suggestions when typing @something or emotes */
-  .autocompleteInner-zh20B_ { background-color: var(--background-tertiary) !important; }
-  .selectorSelected-1_M1WV { background-color: var(--background-floating) !important; }
-
-/* Upload popup */
-  .uploadModal-2ifh8j { background-color: var(--background-primary) !important; } /* colour of upper portion */
-  .footer-3mqk7D { background-color: var(--background-secondary-alt) !important; } /* colour of lower portion */ 
-
-/* Message search menu and quickswitcher; code yoinked from the amazing LuckFire! */
-  .searchFilter-2ESiM3, .searchAnswer-3Dz2-q { background-color: var(--background-secondary-alt) !important; }
-
-  #search-results > .focused-2bY0OD { background-color: var(--background-secondary) !important; }
-  #search-results {
-    background-color: var(--background-secondary) !important;
-    box-shadow: 0 0 0 1px var(--background-tertiary), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .option-96V44q.selected-rZcOL- { background-color: var(--background-modifier-hover) !important; }
-  .option-96V44q::after { background: transparent !important; }
-  .option-96V44q.selected-rZcOL-::before { background: var(--background-secondary-alt) !important; padding-left: 10px; }
-
-  .react-datepicker, .react-datepicker__header { background-color: var(--background-secondary) !important; }
-
-  .react-datepicker__day:not(:hover):not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month) {
-    background-color: var(--background-secondary-alt) !important;
-  }
-  .react-datepicker__day { border-color: var(--background-tertiary) !important; }
-  .react-datepicker__day--disabled,
-  .react-datepicker__day--outside-month { background-color: var(--background-primary) !important; }
-
-/* Sticker blocking "borrowed" from !gh spinfish */
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style] { height: auto !important; width: auto !important; }
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active { height: 160px !important; width: 160px !important; }
-
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:after { content: '1 blocked sticker - Show Sticker'; color: var(--text-link); }
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active:after { content: none; }
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:hover:after { text-decoration: underline; }
-
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style] .lottieCanvas-1W7L-f,
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style] .pngImage-33yLRP { display: none; }
-
-  .ahwrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .lottieCanvas-1W7L-f,
-  .wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .pngImage-33yLRP { display:block; }
-
-
-/* Reaction boxes */
-  .reactors-Blmlhw.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 { background-color: var(--background-primary) !important; } /* main box */
-  .scroller-1-nKid.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 { background-color: var(--background-primary) !important; } /* colour of scroller */
-
-/* Better Playing Modals, again from Luckfire */
-  .headerPlaying-j0WQBV, .topSectionPlaying-1J5E4n { background-color: var(--background-accent); } /* normal */
-  .headerSpotify-zpWxgT, .topSectionSpotify-1lI0-P { background-color: var(--background-accent); } /* spotify FUTURE ME ADD NICE COLOUR FOR THIS*/
-  .headerStreaming-2FjmGz, .topSectionStreaming-1Tpf5X { background-color: var(--background-accent); } /* streaming */
-
-/* Profile when clicked in member list */
-  /* footer colour */
-  .flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0 {
-    background-color: var(--background-tertiary) !important;
-  }
-
-  .body-3iLsc4 { background-color: var(--background-secondary-alt) !important; } /* role box background colour */
-  .footer-1fjuF6 { background-color: var(--background-secondary-alt) !important; } /* footer ie where message user is embedded */
-
-  .quickMessage-2XpSaN.quickMessage-1yeL4E { background-color: var(--background-tertiary) !important; } /* Message user box */
-  .activityUserPopout-2yItg2.activity-11LB_k { background-color: var(--background-tertiary) !important; } /* Playing box */
-
-/* Inline status selection */
-  .status-1fhblQ, .description-2L932D { display: none; }
-  .separator-2I32lJ { display: none; }
-
-  .mask-1qbNWk.icon-1IxfJ2 {
-    --status-icon-size: 75%;
-    height: var(--status-icon-size); 
-    width: var(--status-icon-size);
-    margin-left: 33%;
-  }
-
-  .animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8 >
-  .menu-3sdvDG.styleFixed-sX-yHV > .scroller-3BxosC.thin-1ybCId.scrollerBase-289Jih {
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto auto auto;
-    visibility: visible;
-  }
-
-  .item-1tOPte.colorDefault-2K3EoJ:nth-of-type(7) { grid-column: 1/5; }
-  .animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8 { transition: opacity 0.15s linear 0s; }
-  .customText-tY5LJn { font-size: 15px; }
-
-/* Make pinned messages wider */
-.messagesPopoutWrap-1MQ1bW { width: 500px; }
-
-/* Sets background colour for when you click on Server Boost */
-.perksModalContentWrapper-2HU6uL { background: var(--background-accent) !important; }
-
+/* Main colour variables, If something is pink, I don't know what it affects*/
 .theme-dark,
 .theme-light,
 :root {
-    --background-primary:  #261b17 !important; /* main body colour */
-    --background-secondary: #1b110e !important; /* channel list, embeds, side bar, message box, icons for sharing screen and etc*/
-    --background-secondary-alt: #251510 !important; /*on hover colour for people and channels, and your avatar thingy at the bottoms */
-    --background-tertiary: #1b110e !important; /*side bar around servers*/
-    --background-accent: var(--background-secondary) !important;
-    --background-extra: #f99666; /* stuff like names, time of posting, and placeholders for different text boxes*/
-    --background-extra-alt: #ff00ed;
-    --background-floating: var(--background-tertiary) !important;
-    --background-modifier-hover: var(--background-secondary-alt) !important;
-    --background-modifier-active: #cc5316 !important; /* changes the colour of the channel when clicked */
-    --background-modifier-selected: var(--background-secondary-alt) !important;
-    --background-modifier-accent: #261b17 !important; /* emote background colour, new day startng point thingy lines(https://imgur.com/mAb5EQG) */
-    --channeltextarea-background: var(--background-secondary) !important;
-    --focus-primary: #e35b15 !important; /* tabbing colour */
-    --deprecated-card-bg: #1b110e !important; /* parts of things in settings might affect other things too */
-    --deprecated-card-editable-bg: #ff00ed !important;
-    --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
-    --activity-card-background: var(--background-primary) !important;
-    --channels-default: var(--background-extra) !important;
-    --text-muted: var(--background-extra) !important;
-    --text-normal: #fff !important;
-    --text-link: #e35b15; /* link */
-    --interactive-normal: #e35b15 !important; /* upload file thingy, pins, gif, gift, shit like that, reply and other buttons too */
-    --interactive-hover: var(--background-extra) !important;
-    --interactive-active: var(--text-normal) !important;
-    --interactive-muted: #e35b15 !important; /* muted channels/categories/quotes*/ 
-    --header-secondary: #e8e5e5 !important;
-    --toast-background: var(--background-primary) !important;
-    --toast-header: var(--background-tertiary) !important;
-    --toast-contents: var(--background-secondary) !important;
-    --toast-box-shadow: #ff00ed !important;
-    --toast-border: var(--background-tertiary) !important;
-    --background-mentioned-hover: #cc531645 !important; /* ping on hover*/
-    --background-mentioned: #cc531630; /* just pong */
-    --header-primary: var(--background-extra) !important;
-    --border-radius: 18px;
-    --deprecated-text-input-prefix: #ff00ed; 
-    --scrollbar-thin-thumb: #1b110e; /* channel and people sidebar baby scroll colour */ 
-    --scrollbar-thin-track: transparent; 
-    --scrollbar-auto-thumb: #261b17; /* message box baby scroll thingy */ 
-    --scrollbar-auto-track: #261b17; /* non scrolly part of the scrol */
-    --scrollbar-auto-scrollbar-color-thumb: #ff00ed; 
-    --scrollbar-auto-scrollbar-color-track: #ff00ed; 
-    --elevation-low: transparent; /* imgur.com/a/PQuzp18 /line under channel description*/
-    --elevation-high: 0 4px 10px #ffaa80; /* glow around tooltips */
-    --logo-primary: #ff00ed;
-    --guild-header-text-shadow: 0 1px 1px #ff00ed;
-    --deprecated-panel-background: #ff00ed;
-    --deprecated-quickswitcher-input-background: #532f28; /* CTRL+K/ channel search menu background colour */
-    --deprecated-quickswitcher-input-placeholder: #fff; /* CTRL+K / channel search menu text colour */
-    --deprecated-text-input-bg: #532f28; /*colour on message box background person on profile card pop up*/
-    --deprecated-text-input-border: #f99666 ; /* message box on profile cards border when not focused or hovering*/
-    --deprecated-text-input-border-hover: #f99666; /* message box on profile cards on hover border colour */ 
+	--background-primary: #261b17 !important; /* Main body colour */
+	--background-secondary: #1b110e !important; /* Channel list, embeds, side bar, message box, icons for sharing screen and etc*/
+	--background-secondary-alt: #251510 !important; /* On hover colour for people and channels, and your avatar thingy at the bottoms */
+	--background-tertiary: #1b110e !important; /* Side bar around servers*/
+	--background-accent: var(--background-secondary) !important;
+	--background-extra: #f99666; /* Stuff like names, time of posting, and placeholders for different text boxes*/
+	--background-extra-alt: #532f28; /* Unsure what it does so I'm just stealing it for now */
+	--background-floating: var(--background-tertiary) !important;
+	--background-modifier-hover: var(--background-secondary-alt) !important;
+	--background-modifier-active: #cc5316 !important; /* Changes the colour of the channel when clicked */
+	--background-modifier-selected: var(--background-secondary-alt) !important;
+	--background-modifier-accent: #261b17 !important; /* Emote background colour, this too i think lines(https://imgur.com/mAb5EQG) */
+	--channeltextarea-background: var(--background-secondary) !important;
+	--focus-primary: #e35b15 !important; /* Tabbing colour */
+	--deprecated-card-bg: #1b110e !important; /* Parts of things in settings might affect other things too */
+	--deprecated-card-editable-bg: #ff00ed !important;
+	--deprecated-text-input-border-disabled: var(
+		--background-tertiary
+	) !important;
+	--activity-card-background: var(--background-primary) !important;
+	--channels-default: var(--background-extra) !important;
+	--text-muted: var(--background-extra) !important;
+	--text-normal: #fff !important;
+	--text-link: #e35b15; /* link */
+	--interactive-normal: #e35b15 !important; /* Upload file thingy, pins, gif, gift, shit like that, reply and other buttons too */
+	--interactive-hover: var(--background-extra) !important;
+	--interactive-active: var(--text-normal) !important;
+	--interactive-muted: #e35b15 !important; /* Quotes(muted channels/categories too but that is changed below)*/
+	--header-secondary: #e8e5e5 !important;
+	--toast-background: var(--background-primary) !important;
+	--toast-header: var(--background-tertiary) !important;
+	--toast-contents: var(--background-secondary) !important;
+	--toast-box-shadow: #ff00ed !important;
+	--toast-border: var(--background-tertiary) !important;
+	--background-mentioned-hover: #cc531645 !important; /* Ping on hover*/
+	--background-mentioned: #cc531630; /* Just pong */
+	--header-primary: var(--background-extra) !important;
+	--border-radius: 18px;
+	--deprecated-text-input-prefix: #ff00ed;
+	--scrollbar-thin-thumb: #1b110e; /* Channel and people sidebar baby scroll colour */
+	--scrollbar-thin-track: transparent;
+	--scrollbar-auto-thumb: #261b17; /* Message box baby scroll thingy */
+	--scrollbar-auto-track: #261b17; /* Non scrolly part of the scroll */
+	--scrollbar-auto-scrollbar-color-thumb: #ff00ed;
+	--scrollbar-auto-scrollbar-color-track: #ff00ed;
+	--elevation-low: transparent; /* imgur.com/a/PQuzp18 /line under channel description*/
+	--elevation-high: 0 4px 10px #ffaa80; /* Glow around tooltips */
+	--logo-primary: #ff00ed;
+	--guild-header-text-shadow: 0 1px 1px #ff00ed;
+	--deprecated-panel-background: #ff00ed;
+	--deprecated-quickswitcher-input-background: #532f28; /* CTRL+K/ channel search menu background colour */
+	--deprecated-quickswitcher-input-placeholder: #fff; /* CTRL+K / channel search menu text colour */
+	--deprecated-text-input-bg: #532f28; /* Colour on message box background person on profile card pop up*/
+	--deprecated-text-input-border: #f99666; /* Message box on profile cards border when not focused or hovering*/
+	--deprecated-text-input-border-hover: #f99666; /* Message box on profile cards on hover border colour */
+}
+
+/*-----------------HIDE STUFF------------------*/
+
+/* Completely hide blocked messages */
+div[class*="groupStart-"] > [role="group"] {
+	display: none;
+}
+/* Hide mute unmute icon on server header */
+.toolbar-1t6TWx
+	> div.clickable-3rdHwn.iconWrapper-2OrFZ1:nth-of-type(1)
+	> .icon-22AiRD {
+	display: none;
+}
+/* Hide edited message indicator */
+.edited-3sfAzf {
+	display: none;
+}
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+	display: none;
+}
+/* Hide Nitro Shop button in home screen */
+#private-channels [href="/store"] {
+	display: none;
+}
+/* Hide notes on profile popup */
+div.size12-3R0845.marginBottom8-AtZOdT.bodyTitle-Y0qMQz:nth-of-type(3),
+.scrollbar-3dvm_9.scrollbarGhostHairline-1mSOM1.input-cIJ7To.inputDefault-_djjkz.textarea-2r0oV8 {
+	display: none;
+}
+/* Hide "Invite to server" on different places */
+#user-context-invite-to-server {
+	display: none;
+}
+.colorDefault-2K3EoJ.colorBrand-ROmMP1.labelContainer-1BLJti.item-1tOPte {
+	display: none;
+}
+/* Hide Server Banners */
+.header-2V-4Sw {
+	box-shadow: var(--elevation-low) !important;
+}
+.animatedContainer-1NSq4T {
+	display: none !important;
+}
+#channels .content-3YMskv > div[style*="height:"]:first-child {
+	margin-top: -15px !important;
+}
+/* Hide downloads icon */
+[class*="guilds-"]
+	[class*="scroller-"]
+	> [class*="listItem-"]:nth-last-child(-1n + 3) {
+	display: none;
+}
+
+/*---------------MESSAGES STUFF-----------------*/
+
+/* Make the embed border "wrap around" the embed a bit more */
+.embed-IeVjo6 {
+	border-radius: 6.9px; /* hehe nice */
+}
+/* Disable background darken when hovering on a message */
+.message-2qnXI6:not(.mentioned-xhSam7):hover {
+	background-color: var(--background-primary) !important;
+}
+
+/*--------------CHANNELS LIST STUFF-------------*/
+
+/* Change channel list variable so muted channels/categories are a different colour from quotes */
+[class*="sidebar-"] {
+	--interactive-muted: var(--background-extra-alt);
+	--background-secondary: #1b110e;
+}
+
+/* Transition */
+.sidebar-2K8pFh:hover {
+	width: 240px;
+	transition: 0.1s ease;
+	transition-delay: 0.3s;
+}
+/* Detects screen size to show channels if screen is big enough */
+@media screen and (max-width: 1100px) {
+	.sidebar-2K8pFh {
+		width: 0px;
+		transition: 0.3s ease;
+		position: fixed;
+		height: calc(100% - 47.988px);
+		z-index: 1;
+		bottom: 0px;
+	}
+	.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh {
+		width: 240px;
+	}
+	.sidebar-2K8pFh:hover {
+		width: 240px;
+	}
+}
+
+/*-------------SERVER LIST STUFF----------------*/
+
+/*-------------MISCELLANEOUS STUFF--------------*/
+
+/* Friend list, block list, etc colours */
+.peopleColumn-29fq28 {
+	background-color: var(--background-accent);
+}
+/* Server Boost background */
+.perksModalContentWrapper-2HU6uL {
+	background: var(--background-accent) !important;
+}
+/* Selection colous */
+::selection {
+	color: #fff;
+	background: #f99666;
+}
+/* Make pinned messages wider */
+.messagesPopoutWrap-1MQ1bW {
+	width: 500px;
+}
+/* Make top bar shorter */
+.container-1r6BKw.themed-ANHk51 {
+	height: 40px;
+}
+/* Inline status selection */
+.status-1fhblQ,
+.description-2L932D {
+	display: none;
+}
+.separator-2I32lJ {
+	display: none;
+}
+.mask-1qbNWk.icon-1IxfJ2 {
+	--status-icon-size: 75%;
+	height: var(--status-icon-size);
+	width: var(--status-icon-size);
+	margin-left: 33%;
+}
+.animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8
+	> .menu-3sdvDG.styleFixed-sX-yHV
+	> .scroller-3BxosC.thin-1ybCId.scrollerBase-289Jih {
+	display: grid;
+	align-items: center;
+	grid-template-columns: auto auto auto auto;
+	visibility: visible;
+}
+.item-1tOPte.colorDefault-2K3EoJ:nth-of-type(7) {
+	grid-column: 1/5;
+}
+.animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8 {
+	transition: opacity 0.15s linear 0s;
+}
+.customText-tY5LJn {
+	font-size: 15px;
+}
+/* Custom status on hover */
+.customStatusWithEmoji-8-XZ8I:hover {
+	background-color: #251510;
+	color: #e35b15;
+}
+
+/*----------------SETTINGS STUFF----------------*/
+
+/* Most buttons */
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+	background-color: var(--interactive-normal);
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+	background-color: var(--background-modifier-active);
+}
+
+/* Edit profile buttons */
+button.fieldButton-27bJrp.button-38aScr.lookFilled-1Gx00P.colorGrey-2DXtkV.sizeSmall-2cSMqn.grow-q77ONN {
+	background-color: var(--background-secondary);
+}
+button.fieldButton-27bJrp.button-38aScr.lookFilled-1Gx00P.colorGrey-2DXtkV.sizeSmall-2cSMqn.grow-q77ONN:hover {
+	background-color: var(--background-extra-alt);
+}
+
+/*-----------POPUPS AND PROFILE STUFF-----------*/
+
+/* Colour of boxes of any popup e.g. delete/pin message*/
+.message-2qRu38 {
+	background-color: var(--background-primary) !important; /* Embedded message */
+}
+.root-1gCeng {
+	background-color: var(--background-primary) !important; /* Embedded part */
+}
+.footer-2gL1pp {
+	background-color: var(--background-secondary) !important; /* Footer */
+}
+/* Upload popup */
+.uploadModal-2ifh8j {
+	background-color: var(--background-primary) !important; /* Header */
+}
+.footer-3mqk7D {
+	background-color: var(--background-secondary-alt) !important; /* Footer */
+}
+/* Profile popup streaming colours */
+.headerPlaying-j0WQBV,
+.topSectionPlaying-1J5E4n {
+	background-color: var(--background-accent); /* Default */
+}
+.headerSpotify-zpWxgT,
+.topSectionSpotify-1lI0-P {
+	background-color: var(--background-accent); /* Spotify */
+}
+.headerStreaming-2FjmGz,
+.topSectionStreaming-1Tpf5X {
+	background-color: var(--background-accent); /* Streaming */
+}
+/* Profile when clicked in member list */
+
+.flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0 {
+	background-color: var(--background-tertiary) !important; /* Footer */
+}
+
+.body-3iLsc4 {
+	background-color: var(--background-secondary-alt) !important; /* Role box */
+}
+.footer-1fjuF6 {
+	background-color: var(--background-secondary-alt) !important;
+} /* footer ie where message user is embedded */
+
+.quickMessage-2XpSaN.quickMessage-1yeL4E {
+	background-color: var(--background-tertiary) !important;
+} /* Message user box */
+.activityUserPopout-2yItg2.activity-11LB_k {
+	background-color: var(--background-tertiary) !important;
+} /* Playing box */
+/* Profile right click popup onhover */
+[class*="menu-"] > [class*="scroller-"] [class*="item"][class*="focused"] {
+	background-color: var(--background-extra-alt) !important;
+}
+
+/*-----------------EMOTE STUFF------------------*/
+
+/* Mention suggestions when typing @something or emotes */
+.autocompleteInner-zh20B_ {
+	background-color: var(--background-tertiary) !important;
+}
+.selectorSelected-1_M1WV {
+	background-color: var(--background-floating) !important;
+}
+/* Reaction boxes */
+.reactors-Blmlhw.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 {
+	background-color: var(--background-primary) !important;
+} /* Main box */
+.scroller-1-nKid.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 {
+	background-color: var(--background-primary) !important;
+} /* Colour of scroller */
+/* Emote box selected emote row */
+.selected-1Tbx07.selectable-3dP3y-.base-1pYU8j {
+	background-color: #251510;
+}
+/* Change size of emotes */
+[class*="reactions-"] .emoji {
+	height: 1.3rem;
+	width: 1.3rem;
+}
+/* Colour for when you've reacted */
+[class*="chat-"] [class*="reactionMe-"] {
+	background-color: var(--background-secondary-alt);
+	color: red;
+}
+/* Colour for number when you've reacted */
+.reactionMe-wv5HKu .reactionCount-2mvXRV,
+.reactionMe-wv5HKu:hover .reactionCount-2mvXRV {
+	color: var(--background-extra);
+}
+/*-----------------SEARCH STUFF-----------------*/
+
+/* Message search menu and quickswitcher; code yoinked from the amazing LuckFire! */
+.searchFilter-2ESiM3,
+.searchAnswer-3Dz2-q {
+	background-color: var(--background-secondary-alt) !important;
+}
+
+#search-results > .focused-2bY0OD {
+	background-color: var(--background-secondary) !important;
+}
+#search-results {
+	background-color: var(--background-secondary) !important;
+	box-shadow: 0 0 0 1px var(--background-tertiary);
+}
+
+.option-96V44q.selected-rZcOL- {
+	background-color: var(--background-modifier-hover) !important;
+}
+.option-96V44q::after {
+	background: transparent !important;
+}
+.option-96V44q.selected-rZcOL-::before {
+	background: var(--background-secondary-alt) !important;
+	padding-left: 10px;
+}
+
+.react-datepicker,
+.react-datepicker__header {
+	background-color: var(--background-secondary) !important;
+}
+
+.react-datepicker__day:not(:hover):not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month) {
+	background-color: var(--background-secondary-alt) !important;
+}
+.react-datepicker__day {
+	border-color: var(--background-tertiary) !important;
+}
+.react-datepicker__day--disabled,
+.react-datepicker__day--outside-month {
+	background-color: var(--background-primary) !important;
 }
