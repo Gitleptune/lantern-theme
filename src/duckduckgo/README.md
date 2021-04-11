@@ -1,0 +1,2 @@
+# Lantern theme for DuckDuckGo
+
