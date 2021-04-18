@@ -18,7 +18,7 @@ You should also install Fira Code (https://github.com/tonsky/FiraCode) or change
 * Tabs take up almost all the space of the top bar
 * Tabs have a nice animation 
 * Removes ugly white favicon filter on current website
-  
+* Hide New tab button, vivaldi button and Trash button
 ### Misc
 Make useful keybinds for hiding and showing different parts of the UI so it feels less cluttered and make single key shortcuts.
 
