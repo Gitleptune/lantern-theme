@@ -81,6 +81,7 @@ Paste this in the beginning of a file and start hacking into the mainframe:
 	--brown-dark: #1b110e;
 	--yellow-light: #fad256;
 	--yellow-dark: #fabc2c;
+/* 
    .
  (
  )\
@@ -95,4 +96,5 @@ Paste this in the beginning of a file and start hacking into the mainframe:
    | | |  _  | |___| |  | | |___
    |_| |_| |_|_____|_|  |_|_____|
 }
+*/
 ```
