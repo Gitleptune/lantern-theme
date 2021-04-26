@@ -93,6 +93,7 @@ Paste this in the beginning of a file and start hacking into the mainframe:
    |_| |_| |_|_____|_|  |_|_____|
 }
 */
+}
 ```
 
 ## FAQ
