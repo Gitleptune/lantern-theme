@@ -1,0 +1,82 @@
+
+:root {
+  --dark-shade0: hsl(16, 39%, 12%);
+  --dark-shade0-h: 16;
+  --dark-shade0-s: 39%;
+  --dark-shade0-l: 12%;
+
+  --dark-shade1: hsl(19, 58%, 17%);
+  --dark-shade1-h: 19;
+  --dark-shade1-s: 58%;
+  --dark-shade1-l: 17%;
+
+  --dark-shade2: hsl(19, 66%, 22%);
+  --dark-shade2-h: 19;
+  --dark-shade2-s: 66%;
+  --dark-shade2-l: 22%;
+
+  --dark-shade3: hsl(20, 73%, 27%);
+  --dark-shade3-h: 20;
+  --dark-shade3-s: 73%;
+  --dark-shade3-l: 27%;
+
+  --dark-shade4: hsl(20, 76%, 33%);
+  --dark-shade4-h: 20;
+  --dark-shade4-s: 76%;
+  --dark-shade4-l: 33%;
+
+  --dark-shade5: hsl(20, 79%, 38%);
+  --dark-shade5-h: 20;
+  --dark-shade5-s: 79%;
+  --dark-shade5-l: 38%;
+
+  --dark-shade6: hsl(20, 81%, 43%);
+  --dark-shade6-h: 20;
+  --dark-shade6-s: 81%;
+  --dark-shade6-l: 43%;
+
+  --dark-shade7: hsl(20, 83%, 49%);
+  --dark-shade7-h: 20;
+  --dark-shade7-s: 83%;
+  --dark-shade7-l: 49%;
+
+  --dark-accent0: hsl(11, 76%, 50%);
+  --dark-accent0-h: 11;
+  --dark-accent0-s: 76%;
+  --dark-accent0-l: 50%;
+
+  --dark-accent1: hsl(20, 92%, 69%);
+  --dark-accent1-h: 20;
+  --dark-accent1-s: 92%;
+  --dark-accent1-l: 69%;
+
+  --dark-accent2: hsl(42, 95%, 58%);
+  --dark-accent2-h: 42;
+  --dark-accent2-s: 95%;
+  --dark-accent2-l: 58%;
+
+  --dark-accent3: hsl(78, 47%, 43%);
+  --dark-accent3-h: 78;
+  --dark-accent3-s: 47%;
+  --dark-accent3-l: 43%;
+
+  --dark-accent4: hsl(180, 25%, 52%);
+  --dark-accent4-h: 180;
+  --dark-accent4-s: 25%;
+  --dark-accent4-l: 52%;
+
+  --dark-accent5: hsl(189, 42%, 45%);
+  --dark-accent5-h: 189;
+  --dark-accent5-s: 42%;
+  --dark-accent5-l: 45%;
+
+  --dark-accent6: hsl(29, 48%, 80%);
+  --dark-accent6-h: 29;
+  --dark-accent6-s: 48%;
+  --dark-accent6-l: 80%;
+
+  --dark-accent7: hsl(278, 72%, 65%);
+  --dark-accent7-h: 278;
+  --dark-accent7-s: 72%;
+  --dark-accent7-l: 65%;
+}

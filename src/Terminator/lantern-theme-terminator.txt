@@ -1,0 +1,5 @@
+[[Lantern Theme]]
+  background_color = "#291812"
+  cursor_color = "#c85115"
+  foreground_color = "#c85115"
+  palette = "#291812:#e04220:#82a23a:#fabc2c:#66a4a4:#e4cbb3:#b666e6:#c85115:#ae4814:#e04220:#66a4a4:#fabc2c:#4395a3:#e4cbb3:#b666e6:#e35b15"

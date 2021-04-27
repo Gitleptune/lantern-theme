@@ -1,0 +1,64 @@
+# Status update interval
+set -g status-interval 1
+
+# Basic status bar colors
+set -g status-fg "#793513"
+set -g status-bg "#442212"
+
+# Left side of status bar
+set -g status-left-bg "#442212"
+set -g status-left-fg "#ae4814"
+set -g status-left-length 40
+set -g status-left "#[fg=#291812,bg=#e4cbb3,bold] #S #[fg=#e4cbb3,bg=#933e14,nobold]#[fg=#442212,bg=#933e14] #(whoami) #[fg=#933e14,bg=#5e2b13]#[fg=#933e14,bg=#5e2b13] #I:#P #[fg=#5e2b13,bg=#442212,nobold]"
+
+# Right side of status bar
+set -g status-right-bg "#442212"
+set -g status-right-fg "#ae4814"
+set -g status-right-length 150
+set -g status-right "#[fg=#5e2b13,bg=#442212]#[fg=#933e14,bg=#5e2b13] %H:%M:%S #[fg=#933e14,bg=#5e2b13]#[fg=#442212,bg=#933e14] %d-%b-%y #[fg=#e4cbb3,bg=#933e14]#[fg=#291812,bg=#e4cbb3,bold] #H "
+
+# Window status
+set -g window-status-format "#[fg=#e35b15]#[bg=#442212]  #I:#W#F  "
+set -g window-status-current-format "#[fg=#442212,bg=black]#[fg=#b666e6,nobold] #I:#W#F #[fg=#442212,bg=black,nobold]"
+
+# Current window status
+set -g window-status-current-bg "#e4cbb3"
+set -g window-status-current-fg "#442212"
+
+# Window with activity status
+set -g window-status-activity-bg "#c85115" # fg and bg are flipped here due to
+set -g window-status-activity-fg "#442212" # a bug in tmux
+
+# Window separator
+set -g window-status-separator ""
+
+# Window status alignment
+set -g status-justify centre
+
+# Pane border
+set -g pane-border-bg default
+set -g pane-border-fg "#793513"
+
+# Active pane border
+set -g pane-active-border-bg default
+set -g pane-active-border-fg "#e4cbb3"
+
+# Pane number indicator
+set -g display-panes-colour "#442212"
+set -g display-panes-active-colour "#c85115"
+
+# Clock mode
+set -g clock-mode-colour "#e4cbb3"
+set -g clock-mode-style 24
+
+# Message
+set -g message-bg "#e4cbb3"
+set -g message-fg black
+
+# Command message
+set -g message-command-bg "#442212"
+set -g message-command-fg black
+
+# Mode
+set -g mode-bg "#e4cbb3"
+set -g mode-fg "#e35b15"

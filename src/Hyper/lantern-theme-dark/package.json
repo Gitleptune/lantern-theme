@@ -1,0 +1,11 @@
+{
+  "name": "lanter-theme-hyper",
+  "version": "3.1.1",
+  "description": "lantern theme for Hyper.app",
+  "keywords": [
+    "lantern",
+    "theme",
+    "hyper"
+  ],
+  "main": "lantern-theme-hyper-dark/index.js"
+}
