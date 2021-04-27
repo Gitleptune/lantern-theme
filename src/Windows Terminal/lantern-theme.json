@@ -1,0 +1,23 @@
+{
+  "name": "Lantern Theme",
+  "background": "#291812",
+  "foreground": "#c85115",
+  "cursorColor": "#e4cbb3",
+  "selectionBackground": "#4395a3",
+  "black": "#5e2b13",
+  "brightBlack": "#793513",
+  "red": "#e04220",
+  "brightRed": "#E1471E",
+  "green": "#82a23a",
+  "brightGreen": "#959433",
+  "yellow": "#fabc2c",
+  "brightYellow": "#F5A927",
+  "blue": "#4395a3",
+  "brightBlue": "#638987",
+  "purple": "#e4cbb3",
+  "brightPurple": "#E4B593",
+  "cyan": "#66a4a4",
+  "brightCyan": "#7F9587",
+  "white": "#c85115",
+  "brightWhite": "#e35b15"
+}
