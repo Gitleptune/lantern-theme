@@ -9,7 +9,7 @@
 @-moz-document domain("discord.com") {
 	:root {
 		--background: #261b17;
-		--header: #1b110e;
+		--header: #1b110e;  
 		--background-alt: #291812;
 		--hover: #532f28;
 		--highlight: #f99666;
@@ -18,7 +18,7 @@
 		--ui-alt: #fabc2c;
 		--onclick: #e86420;
 		--visited: #e04220;
-		--text: #fff;
+		--text: #e4cbb3;
 		--green-light: #82a23a;
 		--green-dark: #4d772d;
 		--blue-light: #66a4a4;
@@ -67,7 +67,7 @@
 		--background-accent: var(--background-secondary) !important;
 		--background-extra: var(
 			--highlight
-		) !important; /* Stuff like names, time of posting, and placeholders for different text boxes*/
+		) !important; /* Things like names, time of posting, and placeholders for different text boxes*/
 		--background-extra-alt: var(--hover) !important; /* Unsure what it does so I'm just stealing it for now */
 		--background-floating: var(--header) !important;
 		--background-modifier-hover: var(--background-secondary-alt) !important;
@@ -100,8 +100,8 @@
 		--toast-contents: var(--header) !important;
 		--toast-box-shadow: #ff00ed !important;
 		--toast-border: var(--header) !important;
-		--background-mentioned-hover: rgba(227, 91, 21, 0.8) !important; /* Onhover */ /*CHANGECOLOUR!*/
-		--background-mentioned: rgba(227, 91, 21, 0.6); /* Just pong */ /*CHANGECOLOUR!*/
+		--background-mentioned-hover: rgba(227, 91, 21, 0.3) !important; /* Onhover */ /*CHANGECOLOUR!*/
+		--background-mentioned: rgba(227, 91, 21, 0.1); /* Just pong */ /*CHANGECOLOUR!*/
 		--header-primary: var(--highlight) !important;
 		--border-radius: 18px;
 		--deprecated-text-input-prefix: #ff00ed;
@@ -124,6 +124,19 @@
 	}
 
 	/*-----------------HIDE STUFF------------------*/
+    
+    /* LIVE label when in vc */
+    .base-PmTxvP.textBadge-1iylP6.liveLarge-3zs2Zq.live-vBWnV6 {
+        display: none !important;
+    }
+    /* Region thingy when in vc */
+    .noWrap-3jynv6.alignStretch-DpGPf3.justifyEnd-2E6vba.directionRow-3v3tfG.horizontal-2EEEnY.horizontal-1ae9ci.flex-1O1GKY.flex-1xMQg5 {
+        display: none;
+    }
+    /* Stream pop out pro tip*/
+    .protip-3-1FNm {
+        display: none !important;
+    }
 	/* Rounded corners on images */
 	.imageWrapper-2p5ogY {
 		border-radius: 0px !important;
@@ -194,12 +207,24 @@
 
 	/*--------------CHANNELS LIST STUFF-------------*/
 
+    /* User module */
+    .container-3baos1, .container-3baos1 .avatar-SmRMf2 {
+        background-color: var(--header) !important;
+    }
+    /* VC module */
+    .container-1giJp5 {
+        background-color: var(--header) !important;
+    }
+    /* Voice Connected text */
+    .rtcConnectionStatusConnected-VRZDjy {
+        color: var(--green-light) !important;
+    }
 	/* Change channel list variable so muted channels/categories are a different colour from quotes */
 	[class*="sidebar-"] {
 		--interactive-muted: var(--hover) !important;
 		--background-secondary: var(--header) !important;
 	}
-
+    /* Auto Hide by \xynstr#0300 */
 	/* Transition */
 	.sidebar-2K8pFh:hover {
 		width: 240px !important;
@@ -223,22 +248,74 @@
 			width: 240px !important;
 		}
 	}
+    
+    /*-------------VOICE CHAT VC STUFF--------------*/
+	
+    /* remove background 
+    .background-ujHpbY {
+        background-color: var(--background) !important;
+    }
+    */  
+    /* Background */
+    .fade-2kXiP2.scrollerBase-289Jih.thin-1ybCId.videoGrid-1khsrF.scroller-3gAZLs {
+        background-color: var(--header) !important;
+    }
+    /* Buttons */
+    .colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T,
+    .colorable-1bkp8v.red-33-Lnk, .colorable-1bkp8v.red-33-Lnk .centerIcon-2G6o-T,
+    .colorable-1bkp8v.primaryDark-3mSFDl, .colorable-1bkp8v.primaryDark-3mSFDl .centerIcon-2G6o-T {
+        background-color: var(--background-alt) !important;
+        color: var(--text) !important;
+    }
+    /* Muted mic */
+    .slash-33-IMF {
+        color: var(--ui) !important;
+    }
+    /* Icons */
+    .controlIcon-35oS15 {
+        color: var(--ui);
+    }
+    /* Watch stream label */
+    .cta-3gK0Pu {
+        background-color: var(--background) !important;
+        color: var(--text) !important;
+    }
+    /* Loading vc stream */
+    .spinner-2UBgbJ.spinner-2enMB9 {
+        background-color: var(--hover) !important;
+    }
+    /* Spinny squares */
+    .wanderingCubesItem-WPXqao {
+        background-color: var(--ui) !important;
+    }
+    
+    
+    /*-------------MISCELLANEOUS STUFF--------------*/
 
-	/*-------------SERVER LIST STUFF----------------*/
-
-	/*-------------MISCELLANEOUS STUFF--------------*/
-
+    /* checkboxes */
+    .checkbox-3s5GYZ {
+        color: var(--ui) !important;
+    }
+    /* Logo */
+    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+        color: var(--text) !important;
+        background-color: var(--background-alt) !important;
+    }
 	/* Friend list, block list, etc colours */
 	.peopleColumn-29fq28 {
 		background-color: var(--header) !important;
 	}
+    /* Make pfps be squarier */
+    .avatar-1BDn8e.clickable-1bVtEA {
+        border-radius: 15px !important;
+    }
 	/* Server Boost background */
 	.perksModalContentWrapper-2HU6uL {
 		background: var(--header) !important;
 	}
 	/* Selection colous */
 	::selection {
-		color: var(--text) !important;
+		color: var(--header) !important;
 		background: var(--highlight) !important;
 	}
 	/* Make pinned messages wider */
@@ -266,19 +343,19 @@
 	.animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8
 		> .menu-3sdvDG.styleFixed-sX-yHV
 		> .scroller-3BxosC.thin-1ybCId.scrollerBase-289Jih {
-		display: grid;
-		align-items: center;
-		grid-template-columns: auto auto auto auto;
-		visibility: visible;
+		display: grid !important;
+		align-items: center !important;
+		grid-template-columns: auto auto auto auto !important;
+		visibility: visible !important;
 	}
 	.item-1tOPte.colorDefault-2K3EoJ:nth-of-type(7) {
-		grid-column: 1/5;
+		grid-column: 1/5 !important;
 	}
 	.animatorTop-2Y7x2r.scale-3iLZhb.didRender-33z1u8 {
-		transition: opacity 0.15s linear 0s;
+		transition: opacity 0.15s linear 0s !important;
 	}
 	.customText-tY5LJn {
-		font-size: 15px;
+		font-size: 15px !important;
 	}
 	/* Text box focus in custom status selection*/
 	.input-1GLP_D:focus {
@@ -293,6 +370,11 @@
 	.barBase-1c2Rfb.newMessagesBar-265mhP {
 		background-color: var(--highlight) !important;
 	}
+    /* Ping */
+    .interactive.wrapper-3WhCwL.mention {
+        color: #fff !important;
+        background-color: #e86420d9
+    }
 	/*----------------SETTINGS STUFF----------------*/
 
 	/* Most buttons */
@@ -312,7 +394,24 @@
 	}
 
 	/*-----------POPUPS AND PROFILE STUFF-----------*/
-
+    
+    /* User volume slider */
+    .barFill-23-gu- {
+        background-color: var(--ui) !important;
+    }
+    .bar-2Qqk5Z {
+        background-color: var(--hover) !important;
+    }
+    /* Stream popup */
+    .body-Ogsp8i {
+        background-color: var(--background-alt) !important;
+        padding: 20px !important;
+    }
+    /* Stream popup load */
+    .theme-dark .previewHover-1tGzfF {
+        background-color: var(--header) !important;
+    }
+    
 	/* Colour of boxes of any popup e.g. delete/pin message*/
 	.message-2qRu38 {
 		background-color: var(--background) !important; /* Embedded message */
@@ -395,6 +494,7 @@
 	/* Colour for when you've reacted */
 	[class*="chat-"] [class*="reactionMe-"] {
 		background-color: var(--hover) !important;
+        border: 0px;
 	}
 	/* Colour for number when you've reacted */
 	.reactionMe-wv5HKu .reactionCount-2mvXRV,
@@ -447,4 +547,39 @@
 	.react-datepicker__day--outside-month {
 		background-color: var(--background-primary) !important;
 	}
+    
+    .interactive-3B9GmY.padded-302COx.outer-1AjyKL.wrapper-3D2qGf.itemCard-v9viV7 {
+	background-color: var(--header);
 }
+    .interactive-3B9GmY.padded-302COx.outer-1AjyKL.wrapper-3D2qGf.itemCard-v9viV7:hover     {
+    	background-color: var(--header);
+    }
+    .section-2gLsgF {
+	    background-color: var(--background);
+        border-top: none;
+    	}
+    .section-2gLsgF:hover {
+	    background-color: var(--hover);
+    }
+    /* Annoying line in home screen active now */
+    .body-1ld4H7 .separator-XqIyoz {
+        display: none !important;
+    }   
+
+    /* display info about code blocks */
+    code.hljs:not(.inline)::before {
+        content: attr(class) !important;
+        float: right;
+        display: block;
+        width: auto;
+        max-width:  5.3rem !important;
+        min-width:  auto;
+        margin-top: -8.6rem !important;
+        line-height: 1.6rem !important;
+        overflow-x: hidden;
+        text-align: right;
+        font-size: 0.8rem;
+        opacity: 0.6;
+    } 
+}
+
