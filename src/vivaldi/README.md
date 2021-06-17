@@ -13,23 +13,35 @@ Download Custom CSS and place it into your Vivaldi ``/style`` folder, going to `
 You should also install Fira Code (https://github.com/tonsky/FiraCode) or change the ``font-family`` in the css file to another font.
 
 ## Other
+
 ### Features 
+
 * Transparency on Quick Menu and Address Bar drop downs
 * Tabs take up almost all the space of the top bar
 * Tabs have a nice animation 
 * Removes ugly white favicon filter on current website
 * Hide New tab button, vivaldi button and Trash button
+
 ### Misc
-Make useful keybinds for hiding and showing different parts of the UI so it feels less cluttered and make single key shortcuts.
+
+Tip: make useful single key shortcuts for hiding and showing different parts of the UI so it feels less cluttered and make single key shortcuts.
 
 #### Ones I use
-Quick Commands: Q
-Show Address Bar: P
-Focus Address Bar: K
-New tab: T 
-Close tab: C / W
-Previous tab: 1
-Next tab: 2
-Force reload: R
-Back page: B
 
+Quick Commands: Q
+
+Show Address Bar: P
+
+Focus Address Bar: K
+
+New tab: T 
+
+Close tab: C / W
+
+Previous tab: 1
+
+Next tab: 2
+
+Force reload: R
+
+Back page: B
