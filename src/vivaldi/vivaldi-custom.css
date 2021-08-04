@@ -1,25 +1,14 @@
-#browser.tabs-left #header {
-	display: none;
-}
 /*----------TAB STUFF----------*/
-
-/* Font on tabs */
-.tab-header {
-	font-family: "Fira Code", monospace !important;
-	letter-spacing: -0.75px !important;
-}
-/* Tab area stuff */
+/* Make tabs use all of the screen space */
 #tabs-container.top {
-	/* (When tab position is Top in settings) */
 	padding-left: 2px !important;
-	padding-right: 0 !important; /* Tab bar uses entire window width */
-	width: calc(100vw + 52px) !important; /* Also needed for entire width */
-	border: 0 !important; /* No border below tab bar */
+	padding-right: 0 !important;
+	width: calc(100vw + 62px) !important; /* Change if you need it to be shorter/longer */
+	border: 0 !important;
 }
 /* Animation for tabs */
 .tab-position {
-	/* If active tab has a min-width set in Vivaldi settings, */
-	transition: 0.5s !important; /* make it expand smoothly. */
+	transition: 0.7s !important;
 }
 /* Remove ugly white favicon filter */
 .tab.active .favicon {
@@ -28,27 +17,62 @@
 #switch button.webviewbtn img {
 	background-color: transparent !important;
 }
-
+/* Fancy audio playing tab */
+div.tab.audio-on.button-off {
+  background-color: #fad256 !important;
+  color: #1b110e !important;
+  border: 3px solid #fabc2c !important;
+  border-radius: 0.8em !important;
+  justify-content: center;
+}
+div.tab.audio-on.button-off:hover {
+  background-color: #fabc2c !important;
+}
+/* Fancy active tab */
+#browser .tab-position .tab.active {
+  background-color: #e86420;
+  color: #1b110e;
+  border: 3px solid #e04220;
+  border-radius: 0.8em;
+  justify-content: center;
+}
+#browser .tab-position .tab.active:hover {
+  background-color: #e04220;
+}
 /*-------ADRESS BAR STUFF------*/
-
 /* Omnibox drop-down translucency */
 .OmniDropdown {
 	background: var(--colorBgAlpha);
-	backdrop-filter: blur(1px);
+	backdrop-filter: blur(10px);
 }
-/* center tab and address text */
+/* Center tab and address text */
 .addressfield form input.url,
-.tab-position .tab .title {
-	text-align: center;
+.tab-position .tab .title,
+input.UrlBar-UrlField.url.vivaldi-addressfield.uifocusstop {
+	text-align: center !important;
 }
-/* Address bar font */
-.win.normal .toolbar-mainbar {
-	font-family: "Fira Code", monospace !important;
-	letter-spacing: -0.5px !important;
+/* Hide lock and shield */
+button.button-addressfield.SiteInfoButton.internal,
+button.ToolbarButton-Button,
+button.button-addressfield.SiteInfoButton.secure {
+  display: none;
 }
-
+/* Behind address bar when not hidden */
+.color-behind-tabs-off .toolbar-mainbar {
+	background-color: #261b17;
+}
 /*---------HIDE STUFF---------*/
-
+/* Hide Startpage */
+.sdwrapper {
+  display: none;
+}
+/* Hide Windows titlebar buttons */
+.window-buttongroup {
+  display: none !important;
+}
+#browser.tabs-left #header {
+	display: none;
+}
 /* Line under tabs */
 #browser:not(.address-top) > #header {
 	box-shadow: none !important;
@@ -61,9 +85,18 @@ div.button-toolbar.newtab {
 .vivaldi {
 	display: none !important;
 }
-
-/*--QUICK COMMAND MENU STUFF--*/
-
+/* Hide favicons */
+.favicon, .audioicon, span.tab-audio, .quick-command-favicon > svg, img.quick-command-favicon {
+  display: none !important;
+}
+#tabs-subcontainer .favicon {
+  display: block;
+}
+/* Hide Scrolls */
+::-webkit-scrollbar {
+  display: none !important;
+}
+/*----QUICK COMMAND MENU STUFF----*/
 /* Quick Command position */
 #modal-bg.qc-modal {
 	top: 65px !important;
@@ -71,25 +104,24 @@ div.button-toolbar.newtab {
 /* Quick command menu translucency */
 #modal-bg {
 	background-color: var(--colorBgAlpha);
-	backdrop-filter: blur(1px);
+	backdrop-filter: blur(10px);
 }
 /* Background color of non-selected things in quick command menu to transparent */
 #modal-bg *:not([data-selected]) {
-	background-color: rgba(0, 0, 0, 0) !important;
+	background-color: transparent !important;
 }
-
-/*----MISCELLANEOUS STUFF-----*/
-
-/* Compact bookmark bar */
-.bookmark-bar button {
-	padding: 2px;
+/*----MISCELLANEOUS STUFF----*/
+/* Font */
+* {
+	font-family: "Fira Code" !important;
 }
-#main .bookmark-bar button span {
-	margin-left: 2px;
-	position: absolute;
-	left: 3px;
-	text-shadow: 0 0 2px black, 0 0 6px black, 0 0 10px black;
-	font-weight: bold;
-	top: 12px;
-	font-size: 9px;
+/* Selection */
+::selection {
+	background-color: #f99666cc;
+	color: #1b110e;
+}
+/* Break mode box */
+button.HUD.HUD-enter-done {
+  border-radius: 0.4em;
+  background-color: #291812;
 }
