@@ -1,4 +1,4 @@
-A warm and cozy, brown-orange colour theme for [Discord](), [Vivaldi](), [Firefox](), [DuckDuckGo](), [chitanka.info]() and others.
+A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitleptune/lantern-theme/tree/main/src/discord), [Vivaldi](https://github.com/Gitleptune/lantern-theme/tree/main/src/vivaldi), [Firefox](https://github.com/Gitleptune/lantern-theme/tree/main/src/firefox), [DuckDuckGo](https://github.com/Gitleptune/lantern-theme/tree/main/src/duckduckgo), [chitanka.info](https://github.com/Gitleptune/lantern-theme/tree/main/src/chitanka.info) and [more](https://github.com/Gitleptune/lantern-theme/tree/main/src).
 
 ## Screenshots
 
