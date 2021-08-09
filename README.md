@@ -16,13 +16,14 @@ A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitl
 | Hover            | `#532f28` |  `rgb(83, 47, 40) `   | ![#532f28](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23532f28.png?raw=true "#532f28")  |
 | Highlight        | `#f99666` | `rgb(249, 150, 102) ` | ![#f99666](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23f99666.png?raw=true "#f99666")  |
 | Highlight - Alt  | `#fad256` | `rgb(250, 210, 86) `  | ![#fad256](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fad256.png?raw=true "#fad256")  |
+| Text             | `#e4cbb3` | SOON                  | ![]()                                                                                                                   |
 | UI               | `#e35b15` |  `rgb(227, 91, 21)`   | ![#e35b15](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e35b15.png?raw=true "#e35b15")  |
 | UI - Alt         | `#fabc2c` | `rgb(250, 188, 44) `  | ![#fabc2c](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fabc2c.png?raw=true "#fabc2c")  |
 | Onclick          | `#e86420` | `rgb(232, 100, 32) `  | ![#e86420](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e86420.png?raw=true "#e86420")  |
 | Visited          | `#e04220` |  `rgb(224, 66, 32)`   | ![#e04220](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e04220.png?raw=true "#e04220") |
 | Green Light      | `#82a23a` | `rgb(130, 162, 58) `  | ![#82a23a](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%2382a23a.png?raw=true "#82a23a") |
 | Green Dark       | `#4d772d` |  `rgb(77, 119, 45)`   | ![#4d772d](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%234d772d.png?raw=true "#4d772d") |
-| Blue Light       | `#66a4a4`  | `rgb(102, 164, 164)`  | ![#66a4a4](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%2366a4a4.png?raw=true "#66a4a4") |
+| Blue Light       | `#66a4a4` | `rgb(102, 164, 164)`  | ![#66a4a4](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%2366a4a4.png?raw=true "#66a4a4") |
 | Blue Dark        | `#4395a3` |  `rgb(78, 149, 163)`  | ![#4395a3](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%234395a3.png?raw=true "#4395a3") |
 | Purple Light     | `#c888e8` | `rgb(200, 136, 232)`  | ![#c888e8](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23c888e8.png?raw=true "#c888e8") |
 | Purple Dark      | `#b666e6` | `rgb(182, 102, 230)`  | ![#b666e6](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23b666e6.png?raw=true "#b666e6") |
