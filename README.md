@@ -1,8 +1,8 @@
-A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitleptune/lantern-theme/tree/main/src/discord), [Vivaldi](https://github.com/Gitleptune/lantern-theme/tree/main/src/vivaldi), [Firefox](https://github.com/Gitleptune/lantern-theme/tree/main/src/firefox), [DuckDuckGo](https://github.com/Gitleptune/lantern-theme/tree/main/src/duckduckgo), [chitanka.info](https://github.com/Gitleptune/lantern-theme/tree/main/src/chitanka.info) and [more](https://github.com/Gitleptune/lantern-theme/tree/main/src).
+A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitleptune/lantern-theme/tree/main/src/discord), [Vivaldi](https://github.com/Gitleptune/lantern-theme/tree/main/src/vivaldi) and [more](https://github.com/Gitleptune/lantern-theme/tree/main/src).
 
 ## Screenshots
 
-![in use discord, vivaldi and duckduckgo](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/other/vivaldi.png?raw=true)
+![in use: vivaldi, lantern startpage and duckduckgo](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/other/vivaldi.png?raw=true)
 
 ## Colours
 
@@ -16,7 +16,7 @@ A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitl
 | Hover            | `#532f28` |  `rgb(83, 47, 40) `   | ![#532f28](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23532f28.png?raw=true "#532f28")  |
 | Highlight        | `#f99666` | `rgb(249, 150, 102) ` | ![#f99666](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23f99666.png?raw=true "#f99666")  |
 | Highlight - Alt  | `#fad256` | `rgb(250, 210, 86) `  | ![#fad256](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fad256.png?raw=true "#fad256")  |
-| Text             | `#e4cbb3` | SOON                  | ![]()                                                                                                                   |
+| Text             | `#e4cbb3` | `rgb(228, 203, 179)`                  | ![]()                                                                                                                   |
 | UI               | `#e35b15` |  `rgb(227, 91, 21)`   | ![#e35b15](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e35b15.png?raw=true "#e35b15")  |
 | UI - Alt         | `#fabc2c` | `rgb(250, 188, 44) `  | ![#fabc2c](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fabc2c.png?raw=true "#fabc2c")  |
 | Onclick          | `#e86420` | `rgb(232, 100, 32) `  | ![#e86420](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e86420.png?raw=true "#e86420")  |
@@ -28,7 +28,6 @@ A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitl
 | Purple Light     | `#c888e8` | `rgb(200, 136, 232)`  | ![#c888e8](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23c888e8.png?raw=true "#c888e8") |
 | Purple Dark      | `#b666e6` | `rgb(182, 102, 230)`  | ![#b666e6](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23b666e6.png?raw=true "#b666e6") |
 | Pink Light       | `#fab2c2` | `rgb(250, 178, 194)`  | ![#fab2c2](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fab2c2.png?raw=true "#fab2c2") |
-| Pink Dark        |    `SOON`    |    `SOON`     |    ![]()    |
 | Orange Light     | `#e86420` | `rgb(232, 100, 32) `  | ![#e86420](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e86420.png?raw=true "#e86420") |
 | Orange Dark      | `#e35b15` |  `rgb(227, 91, 21)`   | ![#e35b15](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e35b15.png?raw=true "#e35b15") |
 | Red Light        | `#e04220` |  `rgb(224, 66, 32)`   | ![#e04220](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23e04220.png?raw=true "#e04220") |
@@ -38,15 +37,13 @@ A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitl
 | Yellow Light     | `#fad256` | `rgb(250, 210, 86) `  | ![#fad256](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fad256.png?raw=true "#fad256") |
 | Yellow Dark      | `#fabc2c` | `rgb(250, 188, 44) `  | ![#fab2c2](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/colours/%23fabc2c.png?raw=true "#fabc2c") |
 
-[//]: # " <br> go brrr "
-
 ## Usage
 
-#### Premade themes
+### Premade themes
 
 Check the `src` folder and look through the available apps and websites, further instructions will be avaiable in their READMEs.
 
-#### CSS
+### CSS
 
 Paste this in the beginning of a file and start hacking into the mainframe:
 
@@ -102,26 +99,17 @@ Paste this in the beginning of a file and start hacking into the mainframe:
 > "Are you going to make a light theme soon?"
 
 No, you don't use a lantern when it's bright outside, right?
+
 > "Why are there colours other than brown/orange/red/yellow, the usual lantern colours?"
 
 You can get [different colours of flame](https://en.wikipedia.org/wiki/Colored_fire) by burning different elements.
 
 > Are you going to support *X*?
 
-I hope so, but I don't have the time or knowledge (like VIM/Emacs/VSCode) to do so. Since you're probably experienced with the app, you could try making one yourself and taking a look at the Contibuting section.
+I hope so, but I don't have the time or knowledge (like Emacs) to do so. Since you're probably experienced with the app, you could try making one yourself and taking a look at the Contibuting section.
 
 ## Contributing
 
 If you want to contribute with a theme for an app/website here's how you can do it:
 1. Make a repository and put the code there
 2. Submit an issue with the app name, installation guide and link to your repository if you want it to be included here.
-
-
-
-
-
-
-
-
-
-
