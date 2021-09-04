@@ -2,7 +2,7 @@ A warm and cozy, brown-orange colour theme for [Discord](https://github.com/Gitl
 
 ## Screenshots
 
-![in use: vivaldi, lantern startpage and duckduckgo](https://github.com/Gitleptune/lantern-theme/blob/main/screenshots/other/vivaldi.png?raw=true)
+![in use: vivaldi, lantern startpage and duckduckgo](https://raw.githubusercontent.com/Gitleptune/lantern-theme/main/screenshots/other/vivaldi.png)
 
 ## Colours
 
