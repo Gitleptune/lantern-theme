@@ -1,4 +1,5 @@
 /*----------TAB STUFF----------*/
+
 /* Make tabs use all of the screen space */
 #tabs-container.top {
 	padding-left: 2px !important;
@@ -23,7 +24,7 @@ div.tab.audio-on.button-off {
   color: #1b110e !important;
   border: 3px solid #fabc2c !important;
   border-radius: 0.8em !important;
-  justify-content: center;
+  justify-content: center !important;
 }
 div.tab.audio-on.button-off:hover {
   background-color: #fabc2c !important;
@@ -31,19 +32,21 @@ div.tab.audio-on.button-off:hover {
 /* Fancy active tab */
 #browser .tab-position .tab.active {
   background-color: #e86420;
-  color: #1b110e;
+  color: #1b110e !important;
   border: 3px solid #e04220;
-  border-radius: 0.8em;
-  justify-content: center;
+  border-radius: 0.8em !important;
+  justify-content: center !important;
 }
 #browser .tab-position .tab.active:hover {
   background-color: #e04220;
 }
+
 /*-------ADRESS BAR STUFF------*/
+
 /* Omnibox drop-down translucency */
 .OmniDropdown {
-	background: var(--colorBgAlpha);
-	backdrop-filter: blur(10px);
+	background: var(--colorBgAlpha) !important;
+	backdrop-filter: blur(10px) !important;
 }
 /* Center tab and address text */
 .addressfield form input.url,
@@ -51,27 +54,50 @@ div.tab.audio-on.button-off:hover {
 input.UrlBar-UrlField.url.vivaldi-addressfield.uifocusstop {
 	text-align: center !important;
 }
-/* Hide lock and shield */
-button.button-addressfield.SiteInfoButton.internal,
-button.ToolbarButton-Button,
-button.button-addressfield.SiteInfoButton.secure {
-  display: none;
-}
 /* Behind address bar when not hidden */
 .color-behind-tabs-off .toolbar-mainbar {
-	background-color: #261b17;
+	background-color: #261b17 !important;
 }
+/* Center bookmarks */
+.bookmark-bar .observer {
+ justify-content: center;
+}
+/* Bookmark bar background */
+.bookmark-bar {
+  background-color: #261b17 !important;
+  border: 0px !important;
+  padding: 0px !important;
+}
+/* Bookmarks colours */
+.bookmarkbarItem {
+  background-color: #261b17 !important;
+  color: #f99666 !important;
+}
+/* Centered addressfield URL; by @dude99 on Vivaldi forums */
+.UrlField:not(.UrlField--HasEditText) .UrlBar-UrlField {
+	text-align: center;
+}
+.UrlFragment-Wrapper {
+	width: fit-content;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+/* Hide https:// display; by @dude99 on Vivaldi forums */
+.UrlBar-AddressField > .SiteInfoButton:is(.secure, .certified) + .UrlBar-UrlFieldWrapper .UrlFragment-Wrapper > .UrlFragment--Lowlight:first-of-type {
+  opacity: 0;
+}
+/* Secure domain green highlighter; by @dude99 on Vivaldi forums */
+.UrlBar-AddressField > .SiteInfoButton:is(.secure, .certified) + .UrlBar-UrlFieldWrapper :is(.UrlFragment-HostFragment-Basedomain, .UrlFragment-HostFragment-TLD) {
+  color: #82a23a !Important;
+}
+
 /*---------HIDE STUFF---------*/
-/* Hide Startpage */
-.sdwrapper {
-  display: none;
-}
+
 /* Hide Windows titlebar buttons */
+#browser.tabs-left #header,
 .window-buttongroup {
   display: none !important;
-}
-#browser.tabs-left #header {
-	display: none;
 }
 /* Line under tabs */
 #browser:not(.address-top) > #header {
@@ -90,38 +116,58 @@ div.button-toolbar.newtab {
   display: none !important;
 }
 #tabs-subcontainer .favicon {
-  display: block;
+  display: block !important;
 }
 /* Hide Scrolls */
 ::-webkit-scrollbar {
   display: none !important;
 }
+/* Hide everything but address */
+/* button.button-addressfield.SiteInfoButton.internal,
+.ToolbarButton-Button,
+button.button-addressfield.SiteInfoButton.secure {
+  display: none !important; */
+}
+/* Quick Commands number of commands */
+span.item-count {
+  display: none !important;
+}
+
 /*----QUICK COMMAND MENU STUFF----*/
+
 /* Quick Command position */
 #modal-bg.qc-modal {
 	top: 65px !important;
 }
 /* Quick command menu translucency */
 #modal-bg {
-	background-color: var(--colorBgAlpha);
-	backdrop-filter: blur(10px);
+	background-color: var(--colorBgAlpha) !important;
+	backdrop-filter: blur(10px) !important;
 }
 /* Background color of non-selected things in quick command menu to transparent */
 #modal-bg *:not([data-selected]) {
 	background-color: transparent !important;
 }
+
 /*----MISCELLANEOUS STUFF----*/
+
 /* Font */
 * {
 	font-family: "Fira Code" !important;
 }
 /* Selection */
 ::selection {
-	background-color: #f99666cc;
-	color: #1b110e;
+	background-color: #f99666cc !important;
+	color: #1b110e !important;
 }
 /* Break mode box */
 button.HUD.HUD-enter-done {
-  border-radius: 0.4em;
-  background-color: #291812;
+  border-radius: 0.4em !important;
+  background-color: #291812 !important;
+}
+/* Darker internal pages; by @dude99 on Vivaldi Forums */
+.theme-dark webview[src^="view-source:"] {filter: invert(0.85) hue-rotate(-25deg);}
+/* Beautify preloading screen; by @dude99 on Vivaldi Forums */
+.webpageview.active.visible:not(.internal) .webpage {
+	background-color: #261b17 !important;
 }
