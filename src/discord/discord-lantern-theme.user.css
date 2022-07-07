@@ -83,7 +83,7 @@
 		--deprecated-card-bg: var(
 			--header
 		) !important; /* Parts of things in settings might affect other things too */
-		--deprecated-card-editable-bg: #ff00ed !important;
+		--deprecated-card-editable-bg: var(--background) !important;
 		--deprecated-text-input-border-disabled: var(--header) !important;
 		--activity-card-background: var(--background) !important;
 		--channels-default: var(--highlight) !important;
@@ -98,31 +98,54 @@
 		--toast-background: var(--background) !important;
 		--toast-header: var(--header) !important;
 		--toast-contents: var(--header) !important;
-		--toast-box-shadow: #ff00ed !important;
+		--toast-box-shadow: var(--background) !important;
 		--toast-border: var(--header) !important;
 		--background-mentioned-hover: rgba(227, 91, 21, 0.3) !important; /* Onhover */ /*CHANGECOLOUR!*/
 		--background-mentioned: rgba(227, 91, 21, 0.1); /* Just pong */ /*CHANGECOLOUR!*/
 		--header-primary: var(--highlight) !important;
 		--border-radius: 18px;
-		--deprecated-text-input-prefix: #ff00ed;
+		--deprecated-text-input-prefix: var(--background);
 		--scrollbar-thin-thumb: var(--header); /* Channel and people sidebar baby scroll colour */
 		--scrollbar-thin-track: transparent;
 		--scrollbar-auto-thumb: var(--background); /* Message box baby scroll thingy */
 		--scrollbar-auto-track: var(--background); /* Non scrolly part of the scroll */
-		--scrollbar-auto-scrollbar-color-thumb: #ff00ed;
-		--scrollbar-auto-scrollbar-color-track: #ff00ed;
+		--scrollbar-auto-scrollbar-color-thumb: var(--background);
+		--scrollbar-auto-scrollbar-color-track: var(--background);
 		--elevation-low: transparent; /* imgur.com/a/PQuzp18 /line under channel description*/
-		--elevation-high: 0 1px 5px var(--highlight); /* Glow around tooltips */
-		--logo-primary: #ff00ed;
-		--guild-header-text-shadow: 0 1px 1px #ff00ed;
-		--deprecated-panel-background: #ff00ed;
+		--elevation-high: 0 0px 0px var(--highlight); /* Glow around tooltips */
+		--logo-primary: var(--background);
+		--guild-header-text-shadow: 0 1px 1px var(--background);
+		--deprecated-panel-background: var(--background);
 		--deprecated-quickswitcher-input-background: var(--background-alt); /* CTRL+K background colour */
 		--deprecated-quickswitcher-input-placeholder: var(--text); /* CTRL+K / channel search menu text colour */
 		--deprecated-text-input-bg: var(--hover); /* Message box background person on profile card pop up*/
 		--deprecated-text-input-border: var(--highlight); /* Profile cards message box border if not focus/hover*/
 		--deprecated-text-input-border-hover: var(--highlight); /* Profile message box on hover border colour */
+    --search-popout-option-fade: transparent !important;
+    --search-popout-option-fade-hover: transparent !important;
+    --search-popout-option-user-nickname: var(--text) !important;
+    --search-popout-option-user-username: var(--text) !important;
+    --search-popout-option-filter-text: var(--text) !important;
+    --search-popout-option-non-text-color: var(--header) !important;
+    --search-popout-option-filter-color: var(--header) !important;
+    --search-popout-option-answer-color: var(--header) !important;
+    --search-popout-date-picker-border: 1px solid var(--background)!important;
+    --search-popout-date-picker-hint-text: var(--text) !important;
+    --search-popout-date-picker-hint-value-text: var(--header) !important;
+    --search-popout-date-picker-hint-value-background: var(--highlight) !important;
+    --search-popout-date-picker-hint-value-background-hover: var(--highlight-alt) !important;
+    --brand-experiment: var(--ui) !important;
+    --brand-experiment-hover: var(--ui-alt) !important;
+    --button-danger-background: var(--visited) !important;
+    --button-danger-background-hover: var(--ui) !important;
+    --button-positive-background: var(--green-light) !important;
+    --button-positive-background-hover: var(--green-dark) !important;
+}
 	}
-
+  body {
+    background-color: var(--header) !important;
+  }
+  
 	/*-----------------HIDE STUFF------------------*/
     
     /* LIVE label when in vc */
@@ -146,7 +169,7 @@
 		display: none !important;
 	}
 	/* Completely hide blocked messages */
-	div[class*="groupStart-"] > [role="group"] {
+	div[class*="groupStart-"] > [role="group"], div.groupStart-23k01U > .zalgo-jN1Ica.cozy-3raOZG.wrapper-2a6GCs {
 		display: none !important;
 	}
 	/* Hide mute unmute icon on server header */
@@ -198,15 +221,44 @@
 	[class*="guilds-"] [class*="scroller-"] > [class*="listItem-"]:nth-last-child(-1n + 3) {
 		display: none !important;
 	}
+  /* Hide protip in quick switcher */
+  .inline-1zjmuk.protip-1jXzAl {
+    display: none !important;
+  }
+  .input-3r5zZY {
+    margin-bottom: 1em !important;
+  }
+  /* Hide new member badge */
+  img.newMemberBadge-3PdStX {display: none;} 
+
+  /* Hide pin emoji */
+  .toolbar-3_r2xA > div.clickable-ZD7xvu.iconWrapper-2awDjA > .icon-2xnN2Y > path {
+     display: none !important;
+     pointer-events: none !important;
+  }
+  /* Hide emoji gray overscale */
+  .emojiItemDisabled-3VVnwp {
+  -webkit-filter: none !important; 
+  filter: none !important; 
+  }
+  /* Hide (edited) */
+  .edited-1v5nT8 {
+    display: none;
+  }
 
 	/*---------------MESSAGES STUFF-----------------*
-	/* Disable background darken when hovering on a message */
-	.message-2qnXI6:not(.mentioned-xhSam7):hover {
+	
+  /* Disable background darken when hovering on a message */
+	.cozy-VmLDNB.wrapper-30-Nkg:not(.mentioned-xhSam7):hover {
 		background-color: var(--background) !important;
 	}
 
 	/*--------------CHANNELS LIST STUFF-------------*/
-
+    
+    /* Server name */
+    h1.name-1jkAdW {
+      color: #e4cbb3;
+    }
     /* User module */
     .container-3baos1, .container-3baos1 .avatar-SmRMf2 {
         background-color: var(--header) !important;
@@ -224,7 +276,7 @@
 		--interactive-muted: var(--hover) !important;
 		--background-secondary: var(--header) !important;
 	}
-    /* Auto Hide by \xynstr#0300 */
+  /* Auto Hide by \xynstr#0300 */
 	/* Transition */
 	.sidebar-2K8pFh:hover {
 		width: 240px !important;
@@ -232,7 +284,7 @@
 		transition-delay: 0.3s !important;
 	}
 	/* Detects screen size to show channels if screen is big enough */
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: /*1100px*/ 9999px) {
 		.sidebar-2K8pFh {
 			width: 0px !important;
 			transition: 0.3s ease !important;
@@ -291,23 +343,67 @@
     
     
     /*-------------MISCELLANEOUS STUFF--------------*/
+    
+    /* Style Buttons */
+    .lookFilled-yCfaCM.colorRed-rQXKgM, .lookLink-15mFoz.colorPrimary-2AuQVo {
+      color: var(--text) !important;
+    }
+    /* Style Checkbox */
+    .checkbox-hADx5o{
+      color: var(--ui) !important;
+    }
+    /* Style Check */
+    .check-3HZJs4, .check-3HZJs4:hover {
+      color: var(--header) !important;
+    }
+    /* Style right click pop up colour on hover */
+    .colorDefault-CDqZd0.focus-3qFvc8:hover {
+      color: var(--text) !important;
+    }
 
-    /* checkboxes */
-    .checkbox-3s5GYZ {
-        color: var(--ui) !important;
+    /* Discord home button icon */
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+      background-color: var(--header) !important;
+      color: var(--text) !important;
     }
-    /* Logo */
-    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
-        color: var(--text) !important;
-        background-color: var(--background-alt) !important;
-    }
+  /* Message box text colour */
+  .fontSize18Padding-6BO3Ma {
+      color:  var(--highlight) !important;
+  }
+  .fontSize18Padding-6BO3Ma:focus {
+      color:  var(--text) !important;
+  }
+  /* Quick Switcher Input box */
+  .input-3r5zZY {
+    margin-bottom: 1em !important;
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+  }
+  /* checkboxes */
+  .checkbox-3s5GYZ {
+    color: var(--ui) !important;
+  }
+/* Spoiler colour unclicked */ 
+.spoilerText-27bIiA.hidden-3B-Rum {
+  background-color: var(--header) !important;
+}
+/* Spoiler colour clicked */
+.spoilerText-27bIiA {
+  background-color: var(--background-alt) !important;
+}
+  /* Logo */
+  .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    color: var(--text) !important;
+    background-color: var(--background-alt) !important;
+  }
 	/* Friend list, block list, etc colours */
-	.peopleColumn-29fq28 {
+	.peopleColumn-1wMU14 {
 		background-color: var(--header) !important;
 	}
-    /* Make pfps be squarier */
-    .avatar-1BDn8e.clickable-1bVtEA {
-        border-radius: 15px !important;
+  
+  /* Make pfps be squarier */
+    .avatar-2e8lTP.clickable-31pE3P {
+        border-radius: 0.6em !important;
     }
 	/* Server Boost background */
 	.perksModalContentWrapper-2HU6uL {
@@ -367,13 +463,13 @@
 		color: var(--ui) !important;
 	}
 	/* Unread messages bar */
-	.barBase-1c2Rfb.newMessagesBar-265mhP {
+	.barBase-3xxDXu.newMessagesBar-1hF-9G {
 		background-color: var(--highlight) !important;
 	}
     /* Ping */
-    .interactive.wrapper-3WhCwL.mention {
+    .theme-dark .wrapper-1ZcZW- {
         color: #fff !important;
-        background-color: #e86420d9
+        background-color: #e86420bc;
     }
 	/*----------------SETTINGS STUFF----------------*/
 
@@ -392,9 +488,13 @@
 	button.fieldButton-27bJrp.button-38aScr.lookFilled-1Gx00P.colorGrey-2DXtkV.sizeSmall-2cSMqn.grow-q77ONN:hover {
 		background-color: var(--hover) !important;
 	}
-
 	/*-----------POPUPS AND PROFILE STUFF-----------*/
-    
+
+    /* emoji pop up */
+.scroller-18M1mG {
+  background-color: var(--header) !important;
+}
+
     /* User volume slider */
     .barFill-23-gu- {
         background-color: var(--ui) !important;
@@ -413,14 +513,30 @@
     }
     
 	/* Colour of boxes of any popup e.g. delete/pin message*/
-	.message-2qRu38 {
-		background-color: var(--background) !important; /* Embedded message */
+  /* Header */	
+.header-1zd7se {
+		background-color: var(--background) !important;
 	}
-	.root-1gCeng {
-		background-color: var(--background) !important; /* Embedded part */
+	.content-26qlhD > * {
+		background-color: var(--background) !important; /* Embedded bakcground */
+    box-shadow: none !important;
+    border-radius: 0 !important;
 	}
-	.footer-2gL1pp {
+/* embedded message styling */
+.content-2hZxGK {
+  background-color: var(--background-alt) !important;
+  border-radius: 2.5em !important;
+  box-shadow: none !important;
+  padding: 0.5em !important;
+}
+/* Make embedded message be able to be border radiused */
+.root-g14mjS {
+  background-color: var(--background-alt) !important;
+}
+	.footerSeparator-VzAYwb, .header-1zd7se {
 		background-color: var(--background-alt) !important; /* Footer */
+    border-radius: 0 !important;
+    box-shadow: none !important;
 	}
 	/* Upload popup */
 	.uploadModal-2ifh8j {
@@ -505,6 +621,7 @@
 	.emojiItemDisabled-1FvFuF {
 		filter: grayscale(0%) !important;
 	}
+  
 	/*-----------------SEARCH STUFF-----------------*/
 
 	/* Message search menu and quickswitcher; code yoinked from the amazing LuckFire! */
@@ -564,7 +681,13 @@
     /* Annoying line in home screen active now */
     .body-1ld4H7 .separator-XqIyoz {
         display: none !important;
-    }   
+    } 
+    /* Search tag */ 
+    .search-2Mwzzq .DraftEditor-root .public-DraftStyleDefault-block span {
+      min-width: 1px;
+      background-color: var(--background) !important;
+      color: var(--text) !important;
+    }
 
     /* display info about code blocks */
     code.hljs:not(.inline)::before {
@@ -580,6 +703,19 @@
         text-align: right;
         font-size: 0.8rem;
         opacity: 0.6;
-    } 
+    }
+  /* Badly center settings and avatar */
+  .container-3baos1 {
+      padding: 0 4em;
+  }
+  
+  /* Two column friend list */
+  .scrollerBase-_bVAAt.auto-2K3UW5.peopleList-2VBrVI > .content-2a4AW9 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(550px, 1fr));
+        height: 2em !important;
+    }
+  
+  
+  
 }
-
