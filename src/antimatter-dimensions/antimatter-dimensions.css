@@ -1,0 +1,272 @@
+/* ==UserStyle==
+@name           Antimatter Dimensions Lantern Theme
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://ivark.github.io/AntimatterDimensions/") {
+	    :root {
+	--background: #261b17;
+	--header: #1b110e;
+	--background-alt: #291812;
+	--hover: #532f28;
+	--highlight: #f99666;
+	--highlight-alt: #fad256;
+	--ui: #e35b15;
+	--ui-alt: #fabc2c;
+	--onclick: #e86420;
+	--visited: #e04220;
+    --text: #e4cbb3;
+	--green-light: #82a23a;
+	--green-dark: #4d772d;
+	--blue-light: #66a4a4;
+	--blue-dark: #4395a3;
+	--purple-light: #c888e8;
+	--purple-dark: #b666e6;
+	--pink-light: #fab2c2;
+	--pink-dark: #fff;
+	--orange-light: #e86420;
+	--orange-dark: #e35b15;
+	--red-light: #e04220;
+	--red-dark: #e01d1d;
+	--brown-light: #291812;
+	--brown-dark: #1b110e;
+	--yellow-light: #fad256;
+	--yellow-dark: #fabc2c;
+}
+/* 
+  .
+ (
+ )\
+((_)       _    _   _ _____ _____ ___   _   _
+ | |      / \  | \ | |_   _| ____|  _ \| \ | |
+ | |     / _ \ |  \| | | | |  _| | |_) |  \| |
+ | |___ / ___ \| |\  | | | | |___|  _ <| |\  |
+ |_____/_/   \_|_| \_| |_| |_____|_| \_|_| \_|
+  _____ _   _ _____ __  __ _____
+ |_   _| | | | ____|  \/  | ____|
+   | | | |_| |  _| | |\/| |  _|
+   | | |  _  | |___| |  | | |___
+   |_| |_| |_|_____|_|  |_|_____|
+}
+*/
+	*, html, body {
+		box-shadow: none !important;
+		border: none !important;
+		border: 0px !important;
+		border: transparent !important;
+	}
+	body {
+		background-color: var(--background) !important;
+		color: var(--text) !important;
+	}
+	p, th, td, #coinsPerSec, #tickLabel, #tickSpeedAmount, div#achmultlabel, .presCurrency1,
+	div#infinityPoints1, div#abletobreak, #nextchall, #inchall,
+	div#stats, div#challengetimes, div#infchallengetimes, div#lasttenruns,
+	div#matter,
+	#infPowPerSec {
+		color: var(--text) !important;
+	}
+	#coinAmount, span#infDimMultAmount, #infPowAmount,
+	span#replicantimult,
+	span#replicantiamount {
+		color: var(--highlight) !important;
+	}
+	.unavailablebtn {
+		background-color: var(--header) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+	.unavailablebtn:hover {
+		background-color: var(--red-dark) !important;
+	}
+	.storebtn {
+		background-color: var(--hover) !important;
+		color: var(--text) !important;
+		border: none !important;
+	}
+	.storebtn:hover {
+		background-color: var(--ui) !important;
+	}
+	#progressbar {
+		background-color: var(--ui) !important;
+	}
+	#progress {
+		background-color: var(--hover) !important;
+	}
+	.tabbtn {
+		background: var(--onclick) !important;
+		color: var(--header) !important;
+		border: none !important;
+		padding: 0.1em 0.5em 0.1em 0.5em;
+		margin: 0.2em;
+		transition-duration: 0.1s !important;
+	}
+	.tabbtn:hover {
+		background-color: var(--highlight) !important;
+		border: none !important;
+	}
+	.secondarytabbtn {
+		background: var(--background-alt) !important;
+		color: var(--text) !important;
+		border: none !important;
+		padding: 0.1em 0.5em 0.1em 0.5em;
+		margin: 0.2em;
+		transition-duration: 0.1s !important;
+	}
+	.secondarytabbtn:hover {
+		background-color: var(--ui) !important;
+		border: none !important;
+	}
+	.infinitybtn {
+		background: var(--purple-light) !important;
+		color: var(--header) !important;
+		border: none !important;
+		padding: 0.1em 0.5em 0.1em 0.5em;
+		margin: 0.2em;
+		transition-duration: 0.1s !important;
+	}
+	.infinitybtn:hover {
+		background-color: var(--purple-dark) !important;
+		border: none !important;
+	}
+	#footer > tbody > tr > td > div > * {
+		color: var(--ui) !important;
+	}
+	input {
+		accent-color: var(--ui) !important;
+		background: var(--header) !important;
+    color: var(--text) !important;
+		text-align: center !important;
+	}
+	#A1, #A2, #A3, #A4, #A5, #A6, #A7, #A8 {
+		font-size: 0.8em !important;
+	}
+	.achievementunlocked {
+		background-color: #e35b15aa !important;
+		border: none !important;
+	}
+	.achievementlocked {
+		border: none !important;
+		background-color: #532f28aa !important;
+	}
+	.completedrow {
+		background-color: #e35b15aa !important;
+	}
+	.achievementhidden {
+		background-color: var(--hover) !important;
+	}
+	.notifyjs-bootstrap-info {
+		background-color: var(--ui) !important;
+		color: var(--header) !important;
+	}
+	.IPAmount2, .IPAmount1, .IPAmount3 {
+		color: var(--purple-light) !important;
+	}
+	.infinistorebtnbought {
+		background-color: var(--header) !important;
+		color: var(--color) !important;
+		border: none !important;
+	}
+	.infinistorebtnlocked {
+		background-color: var(--header) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+	.infinistorebtnlocked:hover {
+		background-color: var(--red-dark) !important;
+	}
+	select {
+		background-color: var(--header) !important;
+		color: var(--text) !important;
+	}
+	.autobuyerbtn {
+		background-color: var(--header) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+	.autobuyerbtn:hover {
+		background-color: var(--ui) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+	.popup {
+		background-color: var(--header) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+	.challengediv, .infchallengediv {
+		background-color: var(--header) !important;
+		color: var(--text) !important;
+		padding: 1em !important;
+		border: none !important;
+	}
+	.completedchallengesbtn {
+		margin: 1.6em;
+		background-color: var(--ui) !important;
+		color: var(--header) !important;
+		border: none !important;
+	}
+	
+	.completedchallengesbtn:hover {
+		background-color: var(--visited) !important;
+		color: var(--header) !important;
+		border: none !important;
+	}
+	
+	.onchallengebtn {
+		margin: 1.6em;
+		background-color: var(--purple-light) !important;
+		color: var(--header) !important;
+		border: none !important;
+	}
+	
+	.onchallengebtn:hover {
+		background-color: var(--purple-dark) !important;
+		color: var(--header) !important;
+		border: none !important;
+	}
+	#inchall {
+		margin-bottom: 1.5em !important;
+	}
+	.infinimultbtn {
+		background-color: var(--purple-light) !important;
+		color: var(--header) !important;
+		border: none !important;
+	}
+	.infinimultbtn:hover {
+		background-color: var(--purple-dark) !important;
+		color: var(--header) !important;
+		border: none !important;
+	}
+	.infinistorebtn2 {
+		background-color: var(--header) !important;
+		color: var(--text) !important;
+		border: none !important;
+	}
+	.infinistorebtn2:hover {
+		background-color: var(--red-light) !important;
+	}
+	.newdimlocked {
+		background-color: var(--red-light) !important;
+		border: none !important;
+		color: var(--header) !important;
+	}
+	.newdimlocked:hover {
+		background-color: var(--red-dark) !important;
+		border: none !important;
+		color: var(--header) !important;
+	}
+	.challengesbtn {
+		background-color: var(--hover) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+	.challengesbtn:hover {
+		background-color: var(--ui) !important;
+		border: none !important;
+		color: var(--text) !important;
+	}
+}
