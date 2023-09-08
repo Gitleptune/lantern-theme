@@ -16,25 +16,13 @@ You can use this theme with Stylus (https://github.com/openstyles/stylus) by sim
 
 You can use this theme with BetterDiscord/BeautifulDiscord or any other client that allows css injection.
 
-## Other
-
-### Features:
-
-- Completely hides blocked messages
-- Minimal UI
-- More responsive UI, auto hide channels list(Credit to \xynstr#0300)
-- Better user pop out and status selection (Credit to https://github.com/spinfish/spinfish)
-- Fully customisable colours with the variables in the beginning of the file
-- Display code block language
-
-### Misc
+### Other
 
 Recommended to use with Fira Code (https://github.com/tonsky/FiraCode) (If you have the font installed already you can just remove the google fonts part)
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 * {
     font-family: 'Fira Code', monospace !important;
-    letter-spacing: -0.30px !important;
 }
 ```
 You can also change the whole theme with by only changing the values of the first few variables.
