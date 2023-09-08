@@ -44,6 +44,7 @@
 /*----------TAB STUFF----------*/
 }
 
+
 /* Make tabs use all of the screen space */
 #tabs-container.top {
 	padding-left: 2px !important;
@@ -85,7 +86,7 @@ div.tab.audio-on.button-off:hover {
   background-color: var(--visited);
 }
 
-/*-------ADRESS BAR STUFF------*/
+/*-------ADDRESS BAR STUFF------*/
 
 /* Omnibox drop-down translucency */
 .OmniDropdown {
@@ -97,6 +98,10 @@ div.tab.audio-on.button-off:hover {
 .tab-position .tab .title,
 input.UrlBar-UrlField.url.vivaldi-addressfield.uifocusstop {
 	text-align: center !important;
+}
+/* Make tab text lower case */
+.tab-position .tab .title * {
+  text-transform: lowercase !important;
 }
 /* Behind address bar when not hidden */
 .color-behind-tabs-off .toolbar-mainbar {
@@ -144,8 +149,8 @@ input.UrlBar-UrlField.url.vivaldi-addressfield.uifocusstop {
   display: none !important;
 }
 /* Line under tabs */
-#browser:not(.address-top) > #header {
-	box-shadow: none !important;
+#tabs-container {
+	border: none !important;
 }
 /* Hide New tab button */
 div.button-toolbar.newtab {
@@ -247,7 +252,7 @@ button.HUD.HUD-enter-done {
   background-color: var(--blue-dark) !important;
 }
 
-.tab[title*="Instagram"] {
+.tab[title*="Instagram"], .tab[title*="Direct Messages"] {
   background-color: var(--purple-light) !important;
   color: var(--header) !important;
   border: 3px solid var(--purple-dark) !important;
@@ -255,8 +260,20 @@ button.HUD.HUD-enter-done {
   justify-content: center !important;
 }
 
-.tab[title*="Instagram"]:hover {
+.tab[title*="Instagram"]:hover, .tab[title*="Direct Messages"]:hover {
   background-color: var(--purple-dark) !important;
+}
+
+.tab[title*="⚠️⚠️⚠️"] {
+  background-color: var(--red-dark) !important;
+  color: var(--header) !important;
+  border: 3px solid var(--yellow-light) !important;
+  border-radius: 0.8em !important;
+  justify-content: center !important;
+}
+
+.tab[title*="⚠️⚠️⚠️"]:hover {
+  background-color: var(--header) !important;
 }
 
 /*/ Search box by @dude99 on Vivaldi Forums /*/
